@@ -2411,14 +2411,14 @@ fieldset:disabled a.btn {
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #e84a15;
-  border-color: #dc4614;
+  background-color: #black;
+  border-color: black;
 }
 
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #e84a15;
-  border-color: #dc4614;
+  background-color: #black;
+  border-color: black;
   box-shadow: 0 0 0 0.2rem rgba(240, 123, 84, 0.5);
 }
 
