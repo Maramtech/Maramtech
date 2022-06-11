@@ -9828,21 +9828,25 @@ h6 {
 .team .team-text {
   position: relative;
   width: 100%;
-  height: 100px;
+  /* height: 100px; */
   bottom: 0px;
   left: 0;
   transition: .5s;
 }
 
-.team:hover .team-text {
-  bottom: 100px;
+.team_mem{
+  padding: 20px 10px;
+}
+.team_mem p{
+  text-align: left;
+  font-size: 12px;
 }
 
 .team .team-social {
   position: absolute;
   width: 100%;
   height: 100px;
-  bottom: -100px;
+  /* bottom: -100px; */
   left: 0;
   transition: .5s;
 }

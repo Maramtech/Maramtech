@@ -82,7 +82,7 @@ header{
   text-decoration: none;
   color: black;
   padding: 20px 20px;
-  font-weight: 700;
+  font-weight: 400;
   transition: 0.4s all;
 }
 
@@ -244,7 +244,7 @@ header{
 
 .slide {
     position: absolute;
-    top: 101px;
+    top: 120px;
     left: 0;
     width: 100%;
     height: 450px;
@@ -325,19 +325,19 @@ header{
 
 /* Background Images */
 .slide:first-child {
-    background: url('https://maramtechnologies.in/uploads/slider/Poster_-_01_copy3.jpg') no-repeat center center/cover;
+    background: url('../images/slide2.jpg') no-repeat center center/cover;
 }
 .slide:nth-child(2) {
-    background: url('https://maramtechnologies.in/uploads/slider/Poster_-_03_copy1.jpg') no-repeat center center/cover;
+    background: url('../images/slide3.jpg') no-repeat center center/cover;
 }
 .slide:nth-child(3) {
-    background: url('https://maramtechnologies.in/uploads/slider/Poster_-_04_copy1.jpg') no-repeat center center/cover ;
+    background: url('../images/slide4.jpg') no-repeat center center/cover ;
 }
 .slide:nth-child(4) {
-    background: url('https://maramtechnologies.in/uploads/slider/Poster_-_02_copy1.jpg') no-repeat center center/cover;
+    background: url('../images/slide2.jpg') no-repeat center center/cover;
 }
 .slide:nth-child(5) {
-    background: url('https://maramtechnologies.in/uploads/slider/Poster_-_01_copy3.jpg') no-repeat center center/cover;
+    background: url('../images/slide3.jpg') no-repeat center center/cover;
 }
 
 .onoffswitch {
@@ -387,6 +387,7 @@ header{
 .col-us div{
   width: 95%;
   flex: auto;
+  height: 225px;
   margin: auto;
 }
 h1,
@@ -579,8 +580,8 @@ h6 {}
   .item h6 {
     margin-bottom:20px;
     color:#2f2f2f;
-    font-size: 12px;
-    font-weight: 900;
+    font-size: 13px;
+    font-weight: 700;
   }
   .mission p {
     margin-bottom: 10px;
@@ -901,3 +902,9 @@ h6 {}
       background-image: -webkit-linear-gradient(30deg, #01b0f0 50%, #01b0f0 50%);
     }
 /* Footer */
+
+/* banner */
+ .banner{
+   margin-top: 95px;
+ }
+/* banner */
