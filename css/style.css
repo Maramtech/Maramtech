@@ -16,20 +16,23 @@ header{
   top: 0;
   left: 0;
 }
+header img{
+  width: 300px;
+}
 .top_bar{
-  width: 70%;
-  margin: auto;
-  display: flex;
+  /* width: 70%; */
+  /* margin: auto; */
+  text-align: right;
   font-family: sans-serif;
   /* background-color: rgba(128, 128, 128, 0.1) ; */
-  border-bottom: solid #01b0f0 1px;
+  /* border-bottom: solid #01b0f0 1px;
   border-left: solid #01b0f0 1px;
   border-right: solid #01b0f0 1px;
-  border-radius: 0 0 100px 100px;
-  padding: 10px 0;
+  border-radius: 0 0 100px 100px; */
+  padding: 10px 60px 0 0;
 }
 .top_bar article{
-  font-size: 12px;
+  font-size: 11px;
   margin: auto;
 }
 .top_bar_01 a{
@@ -61,27 +64,26 @@ header{
   /* background-color: #fff; */
 
   position: relative;
-  padding: 0px 70px;
+  padding: 0px 50px;
 }
 .navbar-logo {
   color: #ff3f34;
   text-decoration: none;
-  font-size: 25px;
-  padding: 0px 20px;
+  margin-top: -30px;
 }
 
 .navbar-links {
   list-style-type: none;
   display: flex;
-  margin: auto;
 }
 .navbar-links li a {
   display: block;
   text-decoration: none;
   color: black;
-  padding: 20px 20px;
+  padding: 5px 20px;
   font-weight: 400;
   transition: 0.4s all;
+  margin: 0;
 }
 
 .navbar-links li.navbar-dropdown {
@@ -242,10 +244,10 @@ header{
 
 .slide {
     position: absolute;
-    top: 80px;
+    top: 60px;
     left: 0;
     width: 100%;
-    height: 575px;
+    height: 600px;
     opacity: 0;
 		transform: scale(1);
     transition: all 2s ease-in-out;
@@ -903,6 +905,6 @@ h6 {}
 
 /* banner */
  .banner{
-   margin-top: 95px;
+   margin-top: 60px;
  }
 /* banner */
