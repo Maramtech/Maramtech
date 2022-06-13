@@ -65,6 +65,7 @@ body{
 .contact_info_sec h4{
     letter-spacing: 1px;
     padding-bottom: 15px;
+    color: #fff;
 }
 
 .info_single{
@@ -73,9 +74,13 @@ body{
 .info_single i{
     margin-right: 15px;
 }
-.info_single span{
+.info_single a{
     font-size: 14px;
     letter-spacing: 1px;
+    color: #fff;
+}
+.info_single a:hover{
+    color: #01b0f0;
 }
 
 button.contact_form_submit {
