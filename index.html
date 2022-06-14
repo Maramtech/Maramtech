@@ -71,6 +71,83 @@
   <!-- popup -->
 
   <!-- <header> -->
+  <!-- slider -->
+  <div class="box">
+   <span></span>
+   <span></span>
+   <span></span>
+   </div>
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <!-- <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+    </ol> -->
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/slide2.jpg" width="100%">
+        <!-- <div class="carousel-caption">
+          <h3>First Slide</h3>
+          <p>Caption goes here<br></p>
+        </div> -->
+      </div>
+      <div class="item">
+        <img src="images/slide3.jpg" width="100%">
+        <div class="carousel-caption">
+          <!-- <h3>Second slide</h3>
+          <p>Caption goes here</p> -->
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/slide4.jpg" width="100%">
+        <div class="carousel-caption">
+          <!-- <h3>Third slide</h3>
+          <p>Caption goes here</p> -->
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/slide2.jpg" width="100%">
+        <!-- <div class="carousel-caption">
+          <h3>Fourth slide</h3>
+          <p>Caption goes here</p>
+        </div> -->
+      </div>
+      <div class="item">
+        <img src="images/slide3.jpg" width="100%">
+        <!-- <div class="carousel-caption">
+          <h3>Fifth slide</h3>
+          <p>Caption goes here</p>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+<!-- slider -->
   <header>
     <div class="top_bar">
       <article class="top_bar_01">
@@ -122,153 +199,33 @@
   </header>
 
   <!-- </header> -->
-  <!-- slider -->
-  <section id="slideshow">
-    <div class="slider ">
-      <div class="slide current">
-        <!-- <div class="content">
-          <h1>MacBook</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit illo qui ad repudiandae! Quia, quidem.</p>
-        </div> -->
-      </div>
 
-      <div class="slide">
-        <!-- <div class="content">
-          <h1>iPhone</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit illo qui ad repudiandae! Quia, quidem.</p>
-        </div> -->
-      </div>
-
-      <div class="slide">
-        <!-- <div class="content">
-          <h1>iPad</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit illo qui ad repudiandae! Quia, quidem.</p>
-        </div> -->
-      </div>
-
-      <div class="slide">
-        <!-- <div class="content">
-          <h1>Apple Watch</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit illo qui ad repudiandae! Quia, quidem.</p>
-        </div> -->
-      </div>
-
-      <div class="slide">
-        <!-- <div class="content">
-          <h1>AirPods</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit illo qui ad repudiandae! Quia, quidem.</p>
-        </div> -->
-      </div>
-    </div>
-
-    <div class="buttons">
-      <button id="prev"><i class="fas fa-arrow-left"></i></button>
-      <button id="next"><i class="fas fa-arrow-right"></i></button>
-    </div>
-  </section>
-  <script type="text/javascript">
-  const slides = document.querySelectorAll('.slide');
-  const next = document.querySelector('#next');
-  const prev = document.querySelector('#prev');
-  const toggle = document.querySelector('#myonoffswitch');
-  let auto = true; // Auto scroll
-  const intervalTime = 8000;
-  let slideInterval;
-
-  const nextSlide = () => {
-    // Get current class
-    const current = document.querySelector('.current');
-    // Remove current class
-    current.classList.remove('current');
-    // Check for next slide
-    if (current.nextElementSibling) {
-      // Add current to next sibiling
-      current.nextElementSibling.classList.add('current');
-    }
-    else {
-      // Add current to start
-      slides[0].classList.add('current');
-    }
-    setTimeout(() => current.classList.remove('current'));
-  }
-
-  const prevSlide = () => {
-    // Get current class
-    const current = document.querySelector('.current');
-    // Remove current class
-    current.classList.remove('current');
-    // Check for next slide
-    if (current.previousElementSibling) {
-      // Add current to prev sibiling
-      current.previousElementSibling.classList.add('current');
-    }
-    else {
-      // Add current to last
-      slides[slides.length - 1].classList.add('current');
-    }
-    setTimeout(() => current.classList.remove('current'));
-  }
-
-  // Button events
-  next.addEventListener('click', e => {
-    nextSlide();
-    if(auto) {
-      clearInterval(slideInterval);
-      slideInterval = setInterval(nextSlide, intervalTime);
-    }
-  })
-  prev.addEventListener('click', e => {
-    prevSlide();
-    clearInterval(slideInterval);
-    slideInterval = setInterval(nextSlide, intervalTime);
-  })
-
-  // Auto slide toggle
-  // toggle.addEventListener('click', e => {
-  //   if ( toggle.checked ) {
-  //     auto = true;
-  //     slideInterval = setInterval(nextSlide, intervalTime);
-  //   } else {
-  //     auto = false;
-  //     clearInterval(slideInterval);
-  //   }
-  // })
-
-  // Auto slide
-  if(auto) {
-    slideInterval = setInterval(nextSlide, intervalTime);
-  }
-  </script>
-  <!-- slider -->
   <!-- about us -->
   <div class="feat bg-gray pt-5 pb-5">
     <div class="container">
       <div class="row">
-        <div class="section-head col-sm-12">
-          <!-- <h4><span>Why Choose</span> Us?</h4> -->
-          <!-- <p>Commenced in the year 2015 at Hyderabad, we’re specialized in manufacturing, assembling, sales and distribution of Android Box, Television, Interactive board and Tablet PC. We have in house design and development team who works on designing and building a plethora of products. Maram Technologies is led by industry veterans with multitude of experience in the field. The team has a wide range of experience in providing services for different domains like Education, IT, Digital Signage and IPTV. We are handling all our occupational operations proficiently by the constant support of our staff that has numerous years of working experience in varied projects. We take ownership of our work and consistently meet high standards of excellence in both what we do and the way we do it.</p> -->
-        </div>
+
         <div class="col-us py-5">
           <div class="col-lg-4 ">
-            <div class="item"> <span class="icon feature_box_col_one"> <img src="images/quality.png" alt=""> </span>
+            <div class="items"> <span class="icon feature_box_col_one"> <img src="images/quality.png" alt=""> </span>
               <h6>STRICTLY QUALITY CONTROL</h6>
               <!-- <p>We use latest technology for the latest world because we know the demand of peoples.</p> -->
             </div>
           </div>
           <div class="col-lg-4 ">
-            <div class="item"> <span class="icon feature_box_col_one"><img src="images/team.png" alt=""></span>
+            <div class="items"> <span class="icon feature_box_col_one"><img src="images/team.png" alt=""></span>
               <h6>PROFESSIONAL TEAM</h6>
               <!-- <p>If our customer has any problem and any query we are always happy to help then.</p> -->
             </div>
           </div>
           <div class="col-lg-4 ">
-            <div class="item"> <span class="icon feature_box_col_one"><img src="images/production.png" alt=""></span>
+            <div class="items"> <span class="icon feature_box_col_one"><img src="images/production.png" alt=""></span>
               <h6>ADVANCED PRODUCTION EQUIPMENT</h6>
               <!-- <p>If our customer has any problem and any query we are always happy to help then.</p> -->
             </div>
           </div>
           <div class="col-lg-4 ">
-            <div class="item"> <span class="icon feature_box_col_one"><img src="images/customer.png" alt=""></span>
+            <div class="items"> <span class="icon feature_box_col_one"><img src="images/customer.png" alt=""></span>
               <h6>CUSTOMER FIRST</h6>
               <!-- <p>If our customer has any problem and any query we are always happy to help then.</p> -->
             </div>
