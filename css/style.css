@@ -834,5 +834,7 @@ h6 {}
 /* Footer */
 
 /* banner */
-
+.contact_banner{
+  background-image: url(../images/contact_banner1.jpg);
+}
 /* banner */

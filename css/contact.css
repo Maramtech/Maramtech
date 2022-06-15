@@ -5,8 +5,8 @@ body{
      background: linear-gradient(to right, #0072ff, #00c6ff);
 }
 .contact_us{
-    background-color: #f1f1f1;
-    padding: 120px 0px;
+    /* background-color: #f1f1f1; */
+    padding: 30px 0px;
 }
 
 .contact_inner{
