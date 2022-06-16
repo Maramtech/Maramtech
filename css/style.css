@@ -3,6 +3,8 @@ body{
   font-weight: 300;
 }
 
+
+
 #thanks {
   background-color: #fff;
 }
@@ -70,13 +72,13 @@ body{
 }
 #section10 a span::before {
   position: absolute;
-  top: 10px;
-  left: 50%;
-  content: '';
+  top: 5px;
+  left: 25%;
+  content: '\25bc';
   width: 6px;
   height: 6px;
   margin-left: -3px;
-  background-color: #fff;
+  /* background-color: #fff; */
   border-radius: 100%;
   -webkit-animation: sdb10 2s infinite;
   animation: sdb10 2s infinite;
