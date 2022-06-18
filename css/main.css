@@ -9579,7 +9579,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #01b0f0 !important;
+  color: #000 !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
