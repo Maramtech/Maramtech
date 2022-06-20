@@ -18,6 +18,11 @@ body {
   color: black;
   text-align: center;
 }
+
+.section-bg1{
+  height: 440px;
+  overflow: hidden;
+}
 #portfolio #portfolio-flters {
   padding: 0;
   margin: 5px 0 35px 0;

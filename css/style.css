@@ -7,7 +7,22 @@ body{
   padding: 0;
 }
 
+.back_button{
+  float: right;
+  margin-right: 50px;
 
+}
+
+.back_button button{
+  background-color: rgba(1,171,246,0.5);
+  padding: 10px 15px;
+  border-radius: 50%;
+  border: none;
+}
+.back_button button:hover{
+  background-color: #01b0f0;
+  color: #fff;
+}
 #thanks {
   background-color: #fff;
 }
@@ -888,6 +903,9 @@ h6 {}
 /* Footer */
 
 /* banner */
+.banner img{
+  width: 100%;
+}
 .contact_banner{
   background-image: url(../images/contact_banner1.jpg);
 }

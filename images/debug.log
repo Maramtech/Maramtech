@@ -13,3 +13,4 @@
 [0614/144347.117:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
 [0614/190926.154:ERROR:media_internals.cc(112)] Cannot get RenderProcessHost
 [0615/190629.308:ERROR:media_internals.cc(112)] Cannot get RenderProcessHost
+[0618/190453.136:ERROR:media_internals.cc(112)] Cannot get RenderProcessHost
