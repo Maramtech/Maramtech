@@ -92,8 +92,8 @@ body {
 .Design_Process i{
   margin: 5% 1%;
 }
-.products img{
-  height: 75px;
+.products h1 img{
+  height: 55px;
 }
 .products h5{
   padding-top: 10px;
@@ -103,6 +103,7 @@ body {
 }
 .scanner{
   padding-left: 20px;
+  height: 100px;
 }
 .form-cntr{
   width: 100%;
