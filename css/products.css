@@ -204,3 +204,9 @@ body {
 #clients .owl-dot.active {
   background-color: #01b0f0;
 }
+
+@media (max-width: 500px){
+  .section-bg1{
+    height: 160px;
+  }
+}

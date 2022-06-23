@@ -2,6 +2,9 @@ body{
   font-family: 'Raleway';
   font-weight: 300;
 }
+.mobile{
+  display: none;
+}
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
     width: 10px;
@@ -22,9 +25,7 @@ body{
   margin: 0;
   padding: 0;
 }
-.mobile{
-  display: none;
-}
+
 .logo_index{
   top: -12px;
 }
@@ -170,7 +171,7 @@ body{
 header{
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 1000;
   background-color: #fff;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
 }
@@ -178,7 +179,9 @@ header{
   margin-bottom: 0px;
   z-index: 1999;
   position: relative;
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 12px;
+}
   .site-navbar.transparent {
     background: transparent; }
   .site-navbar.absolute {
@@ -373,7 +376,7 @@ header{
       position: relative;
       display: block; }
       .site-mobile-menu .site-nav-wrap li.active > a {
-        color: #0d0cb5; }
+        color: #01b0f0; }
     .site-mobile-menu .site-nav-wrap .arrow-collapse {
       position: absolute;
       right: 0px;
@@ -413,6 +416,8 @@ header{
       .site-mobile-menu .site-nav-wrap > li > a {
         padding-left: 20px;
         font-size: 20px; }
+      .site-mobile-menu .site-nav-wrap > li > a:hover {
+        color: #01b0f0}
       .site-mobile-menu .site-nav-wrap > li > ul {
         padding: 0;
         margin: 0;
@@ -423,6 +428,8 @@ header{
           .site-mobile-menu .site-nav-wrap > li > ul > li > a {
             padding-left: 40px;
             font-size: 16px; }
+          .site-mobile-menu .site-nav-wrap > li > ul > li > a:hover {
+            color: #01b0f0}
           .site-mobile-menu .site-nav-wrap > li > ul > li > ul {
             padding: 0;
             margin: 0; }
@@ -1449,3 +1456,17 @@ h6 {}
   }
 }
 /* .journey{ */
+footer .row{
+  flex-wrap: nowrap;
+}
+@media (max-width: 1199px){
+  .container{
+    text-align: -webkit-center;
+  }
+  header .container{
+    text-align: inherit;
+  }
+  .container_data{
+    text-align: left;
+  }
+}

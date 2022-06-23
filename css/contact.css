@@ -122,3 +122,20 @@ button.contact_form_submit {
     border-radius: 30px;
     overflow: hidden;
 }
+@media (max-width: 700px){
+.contact_field{
+  padding: 10px;
+}
+.contact_inner{
+  border-radius: 0;
+}
+.contact_info_sec{
+  position: inherit;
+  width: 100%;
+  border-radius: 0;
+margin-top: 20px;
+}
+.contact_inner .row .col-md-2{
+  display: none;
+}
+}
