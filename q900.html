@@ -9,7 +9,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-
+  <script type="text/javascript">
+  if (history.scrollRestoration) {
+    history.scrollRestoration = 'manual';
+  } else {
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    }
+  }
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -46,53 +54,69 @@
 
   <!-- <header> -->
   <header>
-    <div class="top_bar">
-      <article class="top_bar_01">
-        <a href="tel:+918125703703"><i class="fa fa-phone"></i>&nbsp;+91 8125 703 703</a>
-        <a href="mailto:info@maramtechnologies.in"><i class="fa fa-envelope">&nbsp;</i>info@maramtechnologies.in</a>
-      </article>
-      <!-- <article class="top_bar_02">
+    <div class="container">
+      <div id="header" class="top_bar ">
+        <article class="top_bar_01">
+          <a href="tel:+918125703703"><i class="fa fa-phone"></i>&nbsp;+91 8125 703 703</a>
+          <a href="mailto:info@maramtechnologies.in"><i class="fa fa-envelope">&nbsp;</i>info@maramtechnologies.in</a>
+        </article>
+        <!-- <article class="top_bar_02">
         <a href="https://api.whatsapp.com/send?phone=918125703702&text=FOR%20OTT%20AND%20ONU%20BOX%20PLEASE%20CONTACT%20US" ><i class="fab fa-2x fa-whatsapp"></i></a>
         <a href="https://www.linkedin.com/company/maram-technologies-hyderabad"  target="_blank"><i class="fab fa-2x fa-linkedin"></i></a>
         <a href="https://www.facebook.com/Maram-Technologies-100640411782598" target="_blank"><i class="fab fa-2x fa-facebook"></i></a>
       </article> -->
     </div>
-    <div class="">
-      <nav class="navbar">
-      <a href="index.html" class="navbar-logo"><img src="images/logo.svg" alt="" ></a>
-        <ul class="navbar-links">
-          <li class="navbar-dropdown">
-            <a href="index.html">Home</a>
-          </li>
-          <li class="navbar-dropdown">
-            <a href="about.html">About</a>
-          </li>
-          <li class="navbar-dropdown">
-            <a href="#!">Services</a>
-            <div class="dropdown">
-              <a href="software.html">Software</a>
-              <a href="hardware.html">Hardware</a>
-              <a href="manufacturing.html">Manufacturing</a>
-            </div>
-          </li>
-          <li class="navbar-dropdown">
-            <a href="products.html">Products</a>
-          </li>
-          <!-- <li class="navbar-dropdown">
-            <a href="csr.html">CSR</a>
-          </li>
-          <li class="navbar-dropdown">
-            <a href="projects.html">Projects</a>
-          </li> -->
-          <li class="navbar-dropdown">
-            <a href="Careers.html">Careers</a>
-          </li>
-          <li class="navbar-dropdown">
-            <a href="contact.html">Contact</a>
-          </li>
-        </ul>
-    </nav>
     </div>
+    <div class="site-wrap">
+
+      <div class="site-mobile-menu">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+
+
+      <section class="site-navbar  bg-white" role="banner">
+
+        <div class="container">
+          <div class="row align-items-center">
+
+            <div class="col-11 col-xl-2">
+              <h4 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0"> <img src="images/logo.svg" alt="" style="width:270px;"> </a></h4>
+            </div>
+            <div class="col-12 col-md-10 d-none d-xl-block">
+              <nav class="site-navigation position-relative text-right" role="navigation">
+
+                <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
+                  <li class="active"><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li class="has-children">
+                    <a href="#!">Services</a>
+                    <ul class="dropdown">
+                      <li><a href="software.html">Software</a></li>
+                      <li><a href="hardware.html">Hardware</a></li>
+                      <li><a href="manufacturing.html">Manufacturing</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="Products.html">Products</a></li>
+                  <li><a href="careers.html">Career</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+
+
+            <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px; "><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3" style="color: black;"></span></a></div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </section>
   </header>
 
   <!-- </header> -->
@@ -237,3 +261,7 @@
 </body>
 
 </html>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/main1.js"></script>
+<link rel="stylesheet" href="fonts/icomoon/style.css">

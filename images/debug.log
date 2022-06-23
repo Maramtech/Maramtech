@@ -14,3 +14,6 @@
 [0614/190926.154:ERROR:media_internals.cc(112)] Cannot get RenderProcessHost
 [0615/190629.308:ERROR:media_internals.cc(112)] Cannot get RenderProcessHost
 [0618/190453.136:ERROR:media_internals.cc(112)] Cannot get RenderProcessHost
+[0620/192146.753:ERROR:media_internals.cc(112)] Cannot get RenderProcessHost
+[0621/110824.537:INFO:CONSOLE(1)] "Long rAF frame-time", source: file:///C:/Program%20Files/Adobe/Adobe%20Photoshop%202020/Required/www-rich-tooltips/build/external.js (1)
+[0622/115439.299:INFO:CONSOLE(1)] "Long rAF frame-time", source: file:///C:/Program%20Files/Adobe/Adobe%20Photoshop%202020/Required/www-rich-tooltips/build/external.js (1)
