@@ -354,7 +354,6 @@ header{
           text-decoration: none; }
   .site-mobile-menu .site-mobile-menu-body {
     -webkit-overflow-scrolling: touch;
-    position: relative;
     padding: 0 20px 20px 20px;
     height: calc(100vh - 52px);
     padding-bottom: 150px; }
