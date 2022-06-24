@@ -987,7 +987,7 @@ h6 {}
     padding: 20px;
     font-size: 16px;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 460px) {
     .accordian li{
       width: 60px;
     }
@@ -1126,7 +1126,7 @@ h6 {}
       background-color: #013A6B;
       background-image: -webkit-linear-gradient(30deg, #01b0f0 50%, #01b0f0 50%);
     }
-    @media (max-width: 500px) {
+    @media (max-width: 460px) {
       .footer-20192 .cta{
         text-align: center;
       }
