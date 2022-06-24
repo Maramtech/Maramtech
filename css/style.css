@@ -964,6 +964,7 @@ h6 {}
 
   .accordian ul li:hover {
     width: 640px;
+    float: left;
   }
 
   .accordian li img {
