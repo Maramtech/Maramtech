@@ -35,7 +35,20 @@
   --font-family-sans-serif: "Nunito Sans", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
-
+@media only screen and (max-width: 500px){
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+  .Design_Process{
+    width: 100%;
+    margin:auto;
+    display: block;
+    padding-bottom: 50px;
+  }
+}
 *,
 *::before,
 *::after {
@@ -92,6 +105,7 @@ body {
 .Design_Process i{
   margin: 5% 1%;
 }
+
 .products h1 img{
   height: 55px;
 }

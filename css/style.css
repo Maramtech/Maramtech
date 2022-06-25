@@ -5,6 +5,14 @@ body{
 .mobile{
   display: none;
 }
+@media (max-width: 500px) {
+    .mobile{
+      display: block;
+    }
+    .desktop{
+      display: none;
+    }
+}
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
     width: 10px;
@@ -873,12 +881,7 @@ h6 {}
     display: none;
   }
   @media (max-width: 1000px) {
-    .desktop {
-      display: none;
-    }
-    .mobile {
-      display: block;
-    }
+
     .com_item_left, .com_item_right{
       display: block;
       border-radius: 0;
@@ -987,10 +990,11 @@ h6 {}
     padding: 20px;
     font-size: 16px;
   }
-  @media (max-width: 460px) {
+  @media (max-width: 500px) {
     .accordian li{
       width: 60px;
     }
+
   }
   /* products */
   /* project */
@@ -1126,7 +1130,7 @@ h6 {}
       background-color: #013A6B;
       background-image: -webkit-linear-gradient(30deg, #01b0f0 50%, #01b0f0 50%);
     }
-    @media (max-width: 460px) {
+    @media (max-width: 500px) {
       .footer-20192 .cta{
         text-align: center;
       }
@@ -1150,6 +1154,8 @@ h6 {}
 .contact_banner{
   background-image: url(../images/contact_banner1.jpg);
 }
+
+
 /* banner */
 /* .journey{ */
 .journey{
