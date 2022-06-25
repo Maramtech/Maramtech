@@ -877,9 +877,6 @@ h6 {}
     padding: 3px 7px;
     border-radius: 30px;
   }
-  .mobile {
-    display: none;
-  }
   @media (max-width: 1000px) {
 
     .com_item_left, .com_item_right{
