@@ -42,12 +42,10 @@
   .mobile{
     display: block;
   }
-  .Design_Process{
-    width: 100%;
-    margin:auto;
-    display: block;
-    padding-bottom: 50px;
+  .Design_Process img{
+    height: 400px;
   }
+
 }
 *,
 *::before,
@@ -96,11 +94,11 @@ body {
 .Design_Process{
   width: 100%;
   margin:auto;
-  display:flex;
   padding-bottom: 50px;
+  text-align: center;
 }
 .Design_Process img{
-  height: 130px;
+  height: 125px;
 }
 .Design_Process i{
   margin: 5% 1%;
@@ -135,6 +133,14 @@ body {
   border-color: #f7beab;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(237, 100, 54, 0.25);
+}
+@media only screen and (max-width: 500px){
+
+  .Design_Process img{
+    height: 100%;
+    width: 100%;
+  }
+
 }
 hr {
   box-sizing: content-box;
