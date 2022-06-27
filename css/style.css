@@ -988,10 +988,39 @@ h6 {}
     font-size: 16px;
   }
   @media (max-width: 500px) {
-    .accordian li{
-      width: 60px;
+    .accordian{
+      height: 100%;
+      box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0);
+      -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0);
+      -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0);
     }
-
+    .accordian li{
+      width: 100%;
+      margin-bottom: 50px;
+      box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0);
+      -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0);
+      -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0);
+    }
+    .accordian ul {
+      width: 100%;
+      padding: 0;
+      /*This will give ample space to the last item to move
+    	instead of falling down/flickering during hovers.*/
+    }
+    .accordian ul li:hover {
+      width: 100%;
+      float: left;
+    }
+    .accordian ul:hover li {
+      width: 100%;
+    }
+    .image_title {
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
   }
   /* products */
   /* project */
