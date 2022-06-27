@@ -1078,6 +1078,11 @@ h6 {}
   		margin-bottom: 40px;
   	}
   }
+  @media (max-width: 500px) {
+    .text-center div{
+      width: 100%;
+    }
+  }
   /* project */
 /* Footer */
 
