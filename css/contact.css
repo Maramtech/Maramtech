@@ -125,6 +125,9 @@ button.contact_form_submit {
 #today{
   visibility: hidden;
 }
+#time{
+  visibility: hidden;
+}
 @media (max-width: 700px){
 .contact_field{
   padding: 10px;

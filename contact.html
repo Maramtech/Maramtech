@@ -159,9 +159,10 @@
                              <textarea id="message" name="MESSAGE" class="form-control" placeholder="Enter your message" rows="5" required></textarea>
                          </div>
                          <input id="today" type="date" name="DATE">
+                         <input id="time" type='time' name="TIME" value='now'/>
                          <div>
                              <button class="btn btn-primary me-2" style="background: #01b0f0; border: 0;" type="submit" onclick="getFields();">Send message!</button>
-                             <button class="btn btn-danger" type="reset">Reset the form!</button>
+                             <button class="btn btn-danger" type="reset"  >Reset the form!</button>
                          </div>
                      </form>
                    </div>
@@ -215,14 +216,19 @@
 document.querySelector("#today").value = today;
 
      </script>
-     <script>
-        function getFields(){
-            document.getElementById('NAME').value='';
-            document.getElementById('EMAIL').value='';
-            document.getElementById('PHONE').value='';
-            document.getElementById('MESSAGE').value='';
-            }
-    </script>
+     <script type="text/javascript">
+     $(function(){
+  var d = new Date(),
+      h = d.getHours(),
+      m = d.getMinutes();
+  if(h < 10) h = '0' + h;
+  if(m < 10) m = '0' + m;
+  $('input[type="time"][value="now"]').each(function(){
+    $(this).attr({'value': h + ':' + m});
+  });
+});
+     </script>
+
    </section>
 
    <section class="map_sec">

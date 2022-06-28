@@ -1508,3 +1508,30 @@ footer .row{
     text-align: left;
   }
 }
+
+.body_admin {
+  font-family: "Open Sans";
+  background: #2c3e50;
+  color: #ecf0f1;
+  line-height: 1.618em;
+}
+
+.row-fluid {
+	margin-top: 5%;
+	margin-left: 40%;
+	margin-right: auto;
+}
+
+.button1 {
+	margin-left: 43%;
+}
+
+label {
+	font: normal 18px Georgia,serif;
+}
+
+.button2 {
+	display: none;
+	margin-left: 41%;
+	width: 120px;
+}

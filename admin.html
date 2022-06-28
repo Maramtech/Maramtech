@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ADMIN</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <script type="text/javascript">
+      function onSubmit() {
+	/* Use this line of code to go directly to another page when the correct code is entered and the "submit" button is clicked. */
+          /*if (document.getElementById('password').value == '1234') {window.location.href = 'http:google.com'; }else{ alert('Access Denied, Please try again');}*/
+
+  /* Use this line of code to show an "Access Granted" linkable button the user must click after entering the correct code and clicking the "submit" button. */
+  /* (the new button that appears must also be clicked to go to the new page.) */
+         if (document.getElementById('password').value == 'Maram@123') {
+window.location.href="https://maramtech.github.io/Maramtech/datasheets_maramtechnologies.html"; //page to redirect if password entered is correct
+
+}else{ alert('Access Denied, Please try again');}
+     }
+
+
+
+
+
+// In the code above, the ".value" sets the passcode.
+// If you change it to a longer number, make sure you change
+// the "maxlength" on the index.htm page to match.
+
+// You can also change the web page in the "href" to another page.
+// Simply replace "http://google.com" with your desired page.
+
+// You can also change the "alert" text above to what you want to say.
+
+
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+	<div class="container">
+		<h1> <img src="images/logo3.svg" alt="" style="width:300px;"> </h1>
+		<form class="form">
+      <input type="password" name="password"  class="span7" id="password" placeholder="Enter Password Here" required/>
+			<button type="submit" id="login-button">Login</button>
+		</form>
+	</div>
+
+	<ul class="bg-bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+  </body>
+</html>
