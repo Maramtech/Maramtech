@@ -52,7 +52,7 @@
          Sub Sample ()
           Dim iRow
           Set objExcel = CreateObject ("Excel. Application")
-          Set objWorkbook = objExcel.Workbooks.Open ("")
+          Set objWorkbook = objExcel.Workbooks.Open ("https://maramtech.github.io/Maramtech/contact.xlsx")
           objExcel.Application.Visible = True
           ObjWorkbook.Windows (1).Visible = True
           Set XlSheet =objWorkbook.Sheets (1)
@@ -63,15 +63,15 @@
                   .Cells (iRow, 1).activate
                   iRow = iRow + 1
               Loop
-                 .Cells (iRow, 1).value=Document.GetElementsByName ("fname") (0).Value
-                 .Cells (iRow, 2).value=Document.GetElementsByName ("lname") (0).Value
-                 .Cells (iRow, 3).value=Document.GetElementsByName ("Add1") (0).Value
-                 .Cells (iRow, 4).value=Document.GetElementsByName ("Add2") (0).Value
+                 .Cells (iRow, 1).value=Document.GetElementsByName ("Name") (0).Value
+                 .Cells (iRow, 2).value=Document.GetElementsByName ("Email") (0).Value
+                 .Cells (iRow, 3).value=Document.GetElementsByName ("Mobile Number") (0).Value
+                 .Cells (iRow, 4).value=Document.GetElementsByName ("Message") (0).Value
                  MsgBox "Data Added Successfully”, vbinformation"
-                 Document.GetElementsByName ("fname") (0).Value=""
-                 Document.GetElementsByName ("lname") (0).Value=""
-                 Document.GetElementsByName ("Add1") (0).Value=""
-                 Document.GetElementsByName ("Add2") (0).Value=""
+                 Document.GetElementsByName ("Name") (0).Value=""
+                 Document.GetElementsByName ("Email") (0).Value=""
+                 Document.GetElementsByName ("Mobile Number") (0).Value=""
+                 Document.GetElementsByName ("Message") (0).Value=""
              End With
              ObjWorkbook. Save
              ObjWorkbook. Close
