@@ -122,6 +122,9 @@ button.contact_form_submit {
     border-radius: 30px;
     overflow: hidden;
 }
+#today{
+  visibility: hidden;
+}
 @media (max-width: 700px){
 .contact_field{
   padding: 10px;
