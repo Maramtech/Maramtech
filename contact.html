@@ -48,7 +48,37 @@
     color: black;
   }
   </style>
-
+  <script language="vbscript" type="text/vbscript">
+         Sub Sample ()
+          Dim iRow
+          Set objExcel = CreateObject ("Excel. Application")
+          Set objWorkbook = objExcel.Workbooks.Open ("")
+          objExcel.Application.Visible = True
+          ObjWorkbook.Windows (1).Visible = True
+          Set XlSheet =objWorkbook.Sheets (1)
+          XlSheet.Activate
+          iRow = 1
+          With objExcel
+              Do while .Cells (iRow, 1).value <> ""
+                  .Cells (iRow, 1).activate
+                  iRow = iRow + 1
+              Loop
+                 .Cells (iRow, 1).value=Document.GetElementsByName ("fname") (0).Value
+                 .Cells (iRow, 2).value=Document.GetElementsByName ("lname") (0).Value
+                 .Cells (iRow, 3).value=Document.GetElementsByName ("Add1") (0).Value
+                 .Cells (iRow, 4).value=Document.GetElementsByName ("Add2") (0).Value
+                 MsgBox "Data Added Successfully”, vbinformation"
+                 Document.GetElementsByName ("fname") (0).Value=""
+                 Document.GetElementsByName ("lname") (0).Value=""
+                 Document.GetElementsByName ("Add1") (0).Value=""
+                 Document.GetElementsByName ("Add2") (0).Value=""
+             End With
+             ObjWorkbook. Save
+             ObjWorkbook. Close
+             Set objWorkbook = Nothing
+             Set objExcel = Nothing
+         End Sub
+      </script>
 </head>
 <body>
 
@@ -139,12 +169,14 @@
                <div class="col-md-10">
                  <div class="contact_form_inner">
                    <div class="contact_field">
-                     <p>Feel Free to contact us any time. We will get back to you as soon as we can!.</p>
-                     <input type="text" class="form-control form-group" placeholder="Name" />
-                     <input type="text" class="form-control form-group" placeholder="Email" />
-                     <input type="text" class="form-control form-group" placeholder="Moble Number" />
-                     <textarea class="form-control form-group" placeholder="Message"></textarea>
-                     <button class="contact_form_submit">Send</button>
+                     <form>
+                       <p>Feel Free to contact us any time. We will get back to you as soon as we can!.</p>
+                       <input type="text" name="Name" class="form-control form-group" placeholder="Name" />
+                       <input type="text" name="Email" class="form-control form-group" placeholder="Email" />
+                       <input type="text" name="Mobile Number" class="form-control form-group" placeholder="Moble Number" />
+                       <textarea class="form-control form-group" name="Message" placeholder="Message"></textarea>
+                       <button class="contact_form_submit">Send</button>
+                     </form>
                    </div>
                  </div>
                </div>
