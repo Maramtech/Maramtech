@@ -4,25 +4,34 @@
     <meta charset="utf-8">
     <title>ADMIN</title>
     <link rel="stylesheet" href="css/admin.css">
-    <script type="text/javascript">
-    function onSubmit() {
 
-           if (document.getElementById('password').value == '1234') {
-window.location.href="https://maramtech.github.io/Maramtech/datasheets_maramtechnologies.html"; //page to redirect if password entered is correct
-
-}else{ alert('Access Denied, Please try again');}
-       }
-
-    </script>
   </head>
   <body>
     <div class="wrapper">
 	<div class="container">
 		<h1> <img src="images/logo3.svg" alt="" style="width:300px;"> </h1>
 		<form class="form">
-      <input type="password" name="password"  class="span7" id="password" placeholder="Enter Password Here" required/>
+      <input type="password" name="password"  class="span7" maxlength="4"  id="password" placeholder="Enter Password Here" required/>
 			<button class="button1" id="button1" onclick="onSubmit()">Submit</button>
 		</form>
+    <script type="text/javascript">
+    function onSubmit() {
+      if (document.getElementById('password').value == '1234') {window.location.href = 'http:google.com'; }else{ alert('Access Denied, Please try again');}
+    }
+
+    /* There are a couple of ways to use this password webpage. */
+
+    /* Option 1 */
+	/* Use the following line of code to go directly to another page when the correct code is entered and the "submit" button is clicked. */
+
+    /* Option 2 */
+    /* Use this line of code to show an "Access Granted" linkable button the user must click after entering the correct code and clicking the "submit" button. */
+    /* (the new button that appears must also be clicked to go to the new page.) */
+            // if (document.getElementById('password').value == '1234') {window.button2.style.display="block"; }
+            // else{
+            //     alert('Access Denied, Please try again');
+            // }
+    </script>
 	</div>
 
 	<ul class="bg-bubbles">
