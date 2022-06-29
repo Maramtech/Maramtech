@@ -52,10 +52,8 @@ body :-ms-input-placeholder {
           transform: translateY(85px);
 }
 .container {
-  max-width: 600px;
   margin: 0 auto;
-  padding: 240px 0;
-  height: 400px;
+  padding: 180px 0;
   text-align: center;
 }
 .container h1 {

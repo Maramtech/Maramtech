@@ -1535,3 +1535,121 @@ label {
 	margin-left: 41%;
 	width: 120px;
 }
+/* SUPPORT */
+
+
+#fixed-form-container{
+    position: fixed;
+    bottom: 0px;
+    right : 3%;
+    width: 94%;
+    text-align: center;
+    margin: 0;
+    z-index: 100000;
+
+}
+
+#fixed-form-container .button:before {
+   content: "+ ";
+}
+
+#fixed-form-container .expanded:before {
+    content: "- ";
+}
+
+#fixed-form-container .button {
+  font-size:1.1em;
+	cursor: pointer;
+	margin-left: auto;
+  margin-right: auto;
+	border: 2px solid #01b0f0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px 5px 0px 0px;
+	padding: 5px 20px 5px 20px;
+	background-color: #01b0f0;
+	color: #fff;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+  -webkit-box-shadow: 4px 0px 5px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 4px 0px 5px 0px rgba(0,0,0,0.3);
+  box-shadow: 4px 0px 5px 0px rgba(0,0,0,0.3);
+}
+
+#fixed-form-container .body{
+    background-color: #fff;
+    border-radius: 5px;
+    border: 2px solid #01b0f0;
+    margin-bottom: 16px;
+    padding: 10px;
+    text-align: left;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.3);
+}
+
+@media only screen and (min-width:768px){
+    #fixed-form-container .button{
+       margin: 0;
+
+    }
+    #fixed-form-container {
+        width: 390px;
+        text-align: right;
+    }
+
+    #fixed-form-container .body{
+        padding: 30px;
+        border-radius: 0px 5px 5px 5px;
+    }
+}
+.contact_field h3{
+   color: #000;
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 10px
+}
+.contact_field p{
+    color: #000;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+}
+.contact_field .form-control{
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+.contact_field .form-control:focus{
+    box-shadow: none;
+    outline: none;
+    border-bottom: 2px solid #1325e8;
+}
+.contact_field .form-control{
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+.contact_field .form-control:focus{
+    box-shadow: none;
+    outline: none;
+    border-bottom: 2px solid #1325e8;
+}
+.contact_field .form-control::placeholder{
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.form_data{
+  display: flex;
+}
+#today{
+  visibility: hidden;
+}
+#time{
+  visibility: hidden;
+}
+
+/* SUPPORT */

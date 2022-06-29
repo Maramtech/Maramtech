@@ -79,7 +79,68 @@
   });
   </script>
   <!-- popup -->
+  <!-- SUPPORT -->
+  <section id="fixed-form-container">
+	<div class="button">Support</div>
+		<div class="body">
+      <form name="google-sheet" >
+          <div id="form_alerts"></div>
+          <div class="form_data">
+            <div class="form-group mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" name="NAME" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="EMAIL" class="form-control" placeholder="Enter your email address" required>
+            </div>
+          </div>
+          <div class="form_data">
+            <div class="form-group mb-3">
+                <label for="phone" class="form-label">Mobile Number</label>
+                <input type="text" id="phone" name="PHONE"   class="form-control" placeholder="Enter your mobile number" required>
+            </div>
+            <div class="form-group mb-3">
+                <label for="max_number" class="form-label">MAC Number</label>
+                <input type="text" id="MAC" name="MAC_NUMBER"   class="form-control" placeholder="Enter your mobile number" required>
+            </div>
+          </div>
+          <div class="form_data">
+            <div class="form-group mb-3">
+                <label for="name" class="form-label">Company Name</label>
+                <input type="text" id="company" name="COMPANY_NAME"  class="form-control" placeholder="Enter your mobile number" required>
+            </div>
+            <div class="form-group mb-3">
+                <label for="name" class="form-label">City</label>
+                <input type="text" id="city" name="CITY"  class="form-control" placeholder="Enter your mobile number" required>
+            </div>
+          </div>
 
+          <div class="form-group mb-3">
+              <label for="name" class="form-label">Issue</label>
+              <input type="text" id="issue" name="ISSUE"  class="form-control" placeholder="Enter your mobile number" required>
+          </div>
+          <div class="form-group mb-3">
+              <label for="message" class="form-label">Issue Discription</label>
+              <textarea id="message" name="ISSUE_DISCRIPTION" class="form-control" placeholder="Enter your message" rows="5" required></textarea>
+          </div>
+          <input id="today" type="date" name="DATE">
+          <input id="time" type='time' name="TIME" value='now'/>
+          <div>
+              <button class="btn btn-primary me-2" style="background: #01b0f0; border: 0;" type="submit" onclick="getFields();">Send message!</button>
+              <button class="btn btn-danger" type="reset"  >Reset the form!</button>
+          </div>
+      </form>
+    </div>
+</section>
+<script type="text/javascript">
+$("#fixed-form-container .body").hide();
+$("#fixed-form-container .button").click(function () {
+      $(this).next("#fixed-form-container div").slideToggle(400);
+      $(this).toggleClass("expanded");
+  });
+</script>
+  <!-- SUPPORT -->
   <!-- <header> -->
   <!-- slider -->
   <section id="section10" class="demo">
