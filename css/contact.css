@@ -1,8 +1,16 @@
 body{
-  color:#fff
+  color: lightgray;
+  position: relative;
 }
 .right_conatct_social_icon{
      background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+.form_data{
+  display: flex;
+}
+.form_data .form-group{
+  width: 49%;
+  margin: auto;
 }
 .contact_us{
     background-color: #f1f1f1;
@@ -144,4 +152,94 @@ margin-top: 20px;
 .contact_inner .row .col-md-2{
   display: none;
 }
+}
+#login-box {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 350px;
+  margin: 0 auto;
+  border: 1px solid black;
+  background: rgba(48, 46, 45, 1);
+  min-height: 250px;
+  padding: 20px;
+  z-index: 9999;
+}
+#login-box .logo .logo-caption {
+  font-family: 'Poiret One', cursive;
+  color: white;
+  text-align: center;
+  margin-bottom: 0px;
+}
+#login-box .logo .tweak {
+  color: #b1c900;
+}
+#login-box .controls {
+  padding-top: 30px;
+}
+#login-box .controls input {
+  border-radius: 0px;
+  background: rgb(98, 96, 96);
+  border: 0px;
+  color: white;
+}
+#login-box .controls input:focus {
+  box-shadow: none;
+}
+#login-box .controls input:first-child {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+#login-box .controls input:last-child {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+#login-box button.btn-custom {
+  border-radius: 2px;
+  margin-top: 8px;
+  background:#b1c900;
+  border-color: rgba(48, 46, 45, 1);
+  color: white;
+}
+#login-box button.btn-custom:hover{
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  background: rgba(48, 46, 45, 1);
+  border-color: #b1c900;
+}
+#particles-js{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: fixed;
+    top: 0px;
+    z-index:1;
+}
+.btns {
+  background-color: #01b0f0;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 5px;
+  text-align: right;
+}
+.btns a{
+  color: white;
+}
+.btns a:focus{
+  color: white;
+}
+.btn_download{
+  text-align: right;
+  padding: 20px 50px 0 0 ;
+}
+.btns:hover {
+  background-color: gray;
 }
