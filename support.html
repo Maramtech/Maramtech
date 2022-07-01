@@ -142,7 +142,12 @@
 
   <div class="col-md-6">
     <form name="google-sheet" >
-        <div id="form_alerts"></div>
+        <div id="form_alerts"> <div class="cover">
+  <div class="contents">
+    <h1>Contents</h1>
+    <span class="close">Close</span>
+  </div>
+</div></div>
         <div class="form_data">
           <div class="form-group mb-3">
               <label for="name" class="form-label">Name</label>
@@ -159,41 +164,121 @@
               <input type="text" id="phone" name="PHONE"   class="form-control" placeholder="Enter your mobile number" required>
           </div>
           <div class="form-group mb-3">
-              <label for="max_number" class="form-label">MAC Number</label>
-              <input type="text" id="MAC" name="MAC_NUMBER"   class="form-control" placeholder="Enter your mac number" required>
+            <label for="name" class="form-label">Company Name</label>
+            <input type="text" id="company" name="COMPANY_NAME"  class="form-control" placeholder="Enter your company name" required>
           </div>
         </div>
         <div class="form_data">
           <div class="form-group mb-3">
-              <label for="name" class="form-label">Company Name</label>
-              <input type="text" id="company" name="COMPANY_NAME"  class="form-control" placeholder="Enter your company name" required>
+            <label for="max_number" class="form-label">Serial Number</label>
+            <input type="text" id="MAC" name="SERIAL_NUMBER"   class="form-control" placeholder="Enter your serial number" required>
           </div>
           <div class="form-group mb-3">
-              <label for="name" class="form-label">City</label>
-              <input type="text" id="city" name="CITY"  class="form-control" placeholder="Enter your city" required>
+            <label for="max_number" class="form-label">MAC Number</label>
+            <input type="text" id="MAC" name="MAC_NUMBER"   class="form-control" placeholder="Enter your mac number" required>
           </div>
+        </div>
+        <div class="form-group mb-3">
+          <label for="name" class="form-label">City</label>
+          <input type="text" id="city" name="CITY"  class="form-control" placeholder="Enter your city" required>
         </div>
 
         <div class="form-group mb-3">
             <label for="name" class="form-label">Issue</label>
-            <input type="text" id="issue" name="ISSUE"  class="form-control" placeholder="What is your issue?" required>
-        </div>
-        <div class="form-group mb-3">
-            <label for="message" class="form-label">Discription</label>
-            <textarea id="message" name="ISSUE_DISCRIPTION" class="form-control" placeholder="Discribe your issue..." rows="5" required></textarea>
-        </div>
-        <input id="today" type="date" name="DATE">
-        <input id="time" type='time' name="TIME" value='now'/>
-        <div>
-            <button class="btn btn-primary me-2 " style="background: #01b0f0; border: 0;" type="submit" onclick="getFields();">Send message!</button>
-            <!-- <button class="btn btn-danger" type="reset"  >Reset <th></th>e form!</button> -->
-        </div>
+            <select id="player_type" name="player_type" class="form-control">
+                    <option value="issue" selected disabled>Where the issue is?</option>
+                    <option value="team">Hardware</option>
+                    <option value="experience">Software</option>
+                    <option value="surname">Other</option>
+                  </select>
+                    <div class="form-group" style="margin-top:25px;">
+                      <div id="experiance">
+                        <label for="name" class="form-label">Issue type</label>
+                        <select id="exp" name="exp" class="form-control">
+                          <option value="1">A</option>
+                          <option value="2">B</option>
+                          <option value="3">C</option>
+                          <option value="4">D</option>
+                        </select>
+                      </div>
+                      <div id="teams">
+                        <label for="name" class="form-label">Issue type</label>
+                        <select id="team" name="team" class="form-control">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                        </select>
+                      </div>
+                      <div id="ages">
+                        <label for="name" class="form-label">Issue type</label>
+                        <select id="age" name="age" class="form-control">
+                          <option value="1">A</option>
+                          <option value="2">B</option>
+                          <option value="3">C</option>
+                          <option value="4">D</option>
+                        </select>
+                      </div>
+                      <div id="surname">
+                        <label for="name" class="form-label">Issue type</label>
+                        <input type='text' class='form-control' id='surname' >
+                      </div>
+                    </div>
+                </div>
+                <div class="form-group mb-3">
+                  <label for="message" class="form-label">Discription</label>
+                  <textarea id="message" name="ISSUE_DISCRIPTION" class="form-control" placeholder="Discribe your issue..." rows="5" required></textarea>
+                </div>
+                <input id="today" type="date" name="DATE">
+                <input id="time" type='time' name="TIME" value='now'/>
+                <div>
+                  <button class="btn btn-primary me-2 " style="background: #01b0f0; border: 0;" type="submit" onclick="getFields();">Send message!</button>
+                  <!-- <button class="btn btn-danger" type="reset"  >Reset <th></th>e form!</button> -->
+                </div>
+              </div>
+            </div>
+        <!-- <div class="form-group mb-3">
+          <select id="choices" class="form-cntr">
+            <option value="" disabled selected>Please select an option</option>
+          </select>
+        </div> -->
     </form>
+
     <script type="text/javascript">
-    document.querySelector(".third").addEventListener('click', function(){
-Swal.fire("Our First Alert", "With some body text and success icon!", "success");
+    $(document).ready(function () {
+  toggleFields();
+  $("#player_type").change(function () {
+    toggleFields();
+  });
 });
+
+function toggleFields() {
+  if ($("#player_type").val() === "experience") {
+    $("#experiance").show();
+  } else {
+    $("#experiance").hide();
+  }
+  if ($("#player_type").val() === "team") {
+    $("#teams").show();
+  } else {
+    $("#teams").hide();
+  }
+  if ($("#player_type").val() === "age") {
+    $("#ages").show();
+  } else {
+    $("#ages").hide();
+  }
+    if ($("#player_type").val() === "surname") {
+    $("#surname").show();
+  } else {
+    $("#surname").hide();
+  }
+}
+
     </script>
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
 
@@ -206,8 +291,8 @@ Swal.fire("Our First Alert", "With some body text and success icon!", "success")
         form.addEventListener('submit', e => {
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => $("#form_alerts").html("<div class='third'></div>"))
-            // .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>Contact message not sent.</div>"))
+            .then(response => $("#form_alerts").html("<div class='contents'>Contact message sent successfully.</div>"))
+            .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>Contact message not sent.</div>"))
         })
     </script>
     <script type="text/javascript">
