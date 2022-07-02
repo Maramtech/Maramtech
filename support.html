@@ -106,7 +106,7 @@
                 </li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="careers.html">Career</a></li>
-<li><a href="support.html">Support</a></li>
+                <li><a href="support.html">Support</a></li>
                 <li><a href="contact.html">Contact</a></li>
               </ul>
             </nav>
@@ -132,36 +132,32 @@
 </div>
 <div class="container py-5">
   <div class="row">
-  <div class="col-md-6">
-    <h1>Let's get you</br> some help!</h1>
-    <h6>Have any issue? Send us an <span class="email-us">email.</span></h6>
-    <div class="img-wrapper">
-    <img src="https://img.freepik.com/free-vector/flat-design-illustration-customer-support_23-2148887720.jpg?t=st=1656570246~exp=1656570846~hmac=d72506f745eb91296e155acd2855671afc0a85355cba6059453de79ee5f2bc5f&w=740" alt="undraw-onboarding-o8mv-1" border="0" width="90%">
+    <div class="col-md-6">
+      <h1>Let's get you</br> some help!</h1>
+      <h6>Have any issue? Send us an <span class="email-us">email.</span></h6>
+      <div class="img-wrapper">
+        <img src="https://img.freepik.com/free-vector/flat-design-illustration-customer-support_23-2148887720.jpg?t=st=1656570246~exp=1656570846~hmac=d72506f745eb91296e155acd2855671afc0a85355cba6059453de79ee5f2bc5f&w=740" alt="undraw-onboarding-o8mv-1" border="0" width="90%">
       </div>
-  </div>
+    </div>
 
-  <div class="col-md-6">
-    <form name="google-sheet" >
-        <div id="form_alerts"> <div class="cover">
-  <div class="contents">
-    <h1>Contents</h1>
-    <span class="close">Close</span>
-  </div>
-</div></div>
+    <div class="col-md-6">
+      <form name="google-sheet" >
+        <div class="form_alerts">
+        <script src="js/form.js"></script></div>
         <div class="form_data">
           <div class="form-group mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" id="name" name="NAME" class="form-control" placeholder="Enter your name" required>
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" name="NAME" class="form-control" placeholder="Enter your name" required>
           </div>
           <div class="form-group mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" id="email" name="EMAIL" class="form-control" placeholder="Enter your email address" required>
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="EMAIL" class="form-control" placeholder="Enter your email address" required>
           </div>
         </div>
         <div class="form_data">
           <div class="form-group mb-3">
-              <label for="phone" class="form-label">Mobile Number</label>
-              <input type="text" id="phone" name="PHONE"   class="form-control" placeholder="Enter your mobile number" required>
+            <label for="phone" class="form-label">Mobile Number</label>
+            <input type="text" id="phone" name="PHONE"   class="form-control" placeholder="Enter your mobile number" required>
           </div>
           <div class="form-group mb-3">
             <label for="name" class="form-label">Company Name</label>
@@ -184,70 +180,71 @@
         </div>
 
         <div class="form-group mb-3">
-            <label for="name" class="form-label">Issue</label>
-            <select id="player_type" name="player_type" class="form-control">
-                    <option value="issue" selected disabled>Where the issue is?</option>
-                    <option value="team">Hardware</option>
-                    <option value="experience">Software</option>
-                    <option value="surname">Other</option>
-                  </select>
-                    <div class="form-group" style="margin-top:25px;">
-                      <div id="experiance">
-                        <label for="name" class="form-label">Issue type</label>
-                        <select id="exp" name="exp" class="form-control">
-                          <option value="1">A</option>
-                          <option value="2">B</option>
-                          <option value="3">C</option>
-                          <option value="4">D</option>
-                        </select>
-                      </div>
-                      <div id="teams">
-                        <label for="name" class="form-label">Issue type</label>
-                        <select id="team" name="team" class="form-control">
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                          <option value="6">6</option>
-                        </select>
-                      </div>
-                      <div id="ages">
-                        <label for="name" class="form-label">Issue type</label>
-                        <select id="age" name="age" class="form-control">
-                          <option value="1">A</option>
-                          <option value="2">B</option>
-                          <option value="3">C</option>
-                          <option value="4">D</option>
-                        </select>
-                      </div>
-                      <div id="surname">
-                        <label for="name" class="form-label">Issue type</label>
-                        <input type='text' class='form-control' id='surname' >
-                      </div>
-                    </div>
-                </div>
-                <div class="form-group mb-3">
-                  <label for="message" class="form-label">Discription</label>
-                  <textarea id="message" name="ISSUE_DISCRIPTION" class="form-control" placeholder="Discribe your issue..." rows="5" required></textarea>
-                </div>
-                <input id="today" type="date" name="DATE">
-                <input id="time" type='time' name="TIME" value='now'/>
-                <div>
-                  <button class="btn btn-primary me-2 " style="background: #01b0f0; border: 0;" type="submit" onclick="getFields();">Send message!</button>
-                  <!-- <button class="btn btn-danger" type="reset"  >Reset <th></th>e form!</button> -->
-                </div>
-              </div>
-            </div>
-        <!-- <div class="form-group mb-3">
-          <select id="choices" class="form-cntr">
-            <option value="" disabled selected>Please select an option</option>
+          <label for="name" class="form-label">Issue</label>
+          <select id="player_type" name="player_type" class="form-control">
+            <option value="issue" selected disabled>Where the issue is?</option>
+            <option value="team">Hardware</option>
+            <option value="experience">Software</option>
+            <option value="surname">Other</option>
           </select>
-        </div> -->
-    </form>
+          <div class="form-group" style="margin-top:25px;">
+            <div id="experiance">
+              <label for="name" class="form-label">Issue type</label>
+              <select id="exp" name="exp" class="form-control">
+                <option value="1">A</option>
+                <option value="2">B</option>
+                <option value="3">C</option>
+                <option value="4">D</option>
+              </select>
+            </div>
+            <div id="teams">
+              <label for="name" class="form-label">Issue type</label>
+              <select id="team" name="team" class="form-control">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+              </select>
+            </div>
+            <div id="ages">
+              <label for="name" class="form-label">Issue type</label>
+              <select id="age" name="age" class="form-control">
+                <option value="1">A</option>
+                <option value="2">B</option>
+                <option value="3">C</option>
+                <option value="4">D</option>
+              </select>
+            </div>
+            <div id="surname">
+              <label for="name" class="form-label">Issue type</label>
+              <input type='text' class='form-control' id='surname' >
+            </div>
+          </div>
+        </div>
+        <div class="form-group mb-3">
+          <label for="message" class="form-label">Discription</label>
+          <textarea id="message" name="ISSUE_DISCRIPTION" class="form-control" placeholder="Discribe your issue..." rows="5" required></textarea>
+        </div>
+        <input id="today" type="date" name="DATE">
+        <input id="time" type='time' name="TIME" value='now'/>
+        <p  class='result'></p>
+        <div>
+          <button class="btn btn-primary me-2 " style="background: #01b0f0; border: 0;" type="submit" onclick="getFields()">Send message!</button>
+          <!-- <button class="btn btn-danger" type="reset"  >Reset <th></th>e form!</button> -->
+        </div>
+      </div>
+    </div>
+    <!-- <div class="form-group mb-3">
+    <select id="choices" class="form-cntr">
+    <option value="" disabled selected>Please select an option</option>
+  </select>
+</div> -->
+</form>
 
-    <script type="text/javascript">
-    $(document).ready(function () {
+<script type="text/javascript">
+$(document).ready(function () {
   toggleFields();
   $("#player_type").change(function () {
     toggleFields();
@@ -270,174 +267,197 @@ function toggleFields() {
   } else {
     $("#ages").hide();
   }
-    if ($("#player_type").val() === "surname") {
+  if ($("#player_type").val() === "surname") {
     $("#surname").show();
   } else {
     $("#surname").hide();
   }
 }
 
-    </script>
+</script>
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwCfyGtRTnXR6xXeXEJDJM5ejWYtXac1hFXRcaxCV8bjF5gqLkgNfoKcExDyIG_Zt-UsA/exec'
-        const form = document.forms['google-sheet']
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwCfyGtRTnXR6xXeXEJDJM5ejWYtXac1hFXRcaxCV8bjF5gqLkgNfoKcExDyIG_Zt-UsA/exec'
+const form = document.forms['google-sheet']
 
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => $("#form_alerts").html("<div class='contents'>Contact message sent successfully.</div>"))
-            .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>Contact message not sent.</div>"))
-        })
-    </script>
-    <script type="text/javascript">
-    let today = new Date().toISOString().substr(0, 10);
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => $(".form_alerts")
+  .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>Contact message not sent.</div>"))
+})
+</script>
+
+<script type="text/javascript">
+
+
+</script>
+</script>
+<script type="text/javascript">
+var genString = function(len){
+  var template = "0123456789";
+  var stringId = "";
+
+  for(var i = 0; i < len; i++){
+    var randomNum = Math.floor(Math.random() * (template.length));
+    console.log(randomNum);
+    stringId += template[randomNum];
+  }
+  return stringId;
+};
+
+$(document).ready(function(){
+  $('.result').html(genString(10));
+})
+</script>
+<script type="text/javascript">
+let today = new Date().toISOString().substr(0, 10);
 document.querySelector("#today").value = today;
 
-    </script>
-    <script type="text/javascript">
-    $(function(){
- var d = new Date(),
-     h = d.getHours(),
-     m = d.getMinutes();
- if(h < 10) h = '0' + h;
- if(m < 10) m = '0' + m;
- $('input[type="time"][value="now"]').each(function(){
-   $(this).attr({'value': h + ':' + m});
- });
+</script>
+<script type="text/javascript">
+$(function(){
+  var d = new Date(),
+  h = d.getHours(),
+  m = d.getMinutes();
+  if(h < 10) h = '0' + h;
+  if(m < 10) m = '0' + m;
+  $('input[type="time"][value="now"]').each(function(){
+    $(this).attr({'value': h + ':' + m});
+  });
 });
-    </script>
-    <script type="text/javascript">
-    $.getScript("https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js", function(){
+</script>
+<script type="text/javascript">
+$.getScript("https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js", function(){
   particlesJS('particles-js',
-    {
-      "particles": {
-        "number": {
-          "value": 100,
-          "density": {
-            "enable": true,
-            "value_area": 500
-          }
-        },
-        "color": {
-          "value": "#b1c900"
-        },
-        "shape": {
-          "type": "circle",
-          "stroke": {
-            "width": 0,
-            "color": "#000000"
-          },
-          "polygon": {
-            "nb_sides": 5
-          },
-          "image": {
-            "width": 100,
-            "height": 100
-          }
-        },
-        "opacity": {
-          "value": 0.5,
-          "random": false,
-          "anim": {
-            "enable": false,
-            "speed": 1,
-            "opacity_min": 0.1,
-            "sync": false
-          }
-        },
-        "size": {
-          "value": 5,
-          "random": true,
-          "anim": {
-            "enable": false,
-            "speed": 40,
-            "size_min": 0.1,
-            "sync": false
-          }
-        },
-        "line_linked": {
+  {
+    "particles": {
+      "number": {
+        "value": 100,
+        "density": {
           "enable": true,
-          "distance": 150,
-          "color": "#ffffff",
-          "opacity": 0.4,
-          "width": 1
-        },
-        "move": {
-          "enable": true,
-          "speed": 6,
-          "direction": "none",
-          "random": false,
-          "straight": false,
-          "out_mode": "out",
-          "attract": {
-            "enable": false,
-            "rotateX": 600,
-            "rotateY": 1200
-          }
+          "value_area": 500
         }
       },
-      "interactivity": {
-        "detect_on": "canvas",
-        "events": {
-          "onhover": {
-            "enable": true,
-            "mode": "repulse"
-          },
-          "onclick": {
-            "enable": true,
-            "mode": "push"
-          },
-          "resize": true
+      "color": {
+        "value": "#b1c900"
+      },
+      "shape": {
+        "type": "circle",
+        "stroke": {
+          "width": 0,
+          "color": "#000000"
         },
-        "modes": {
-          "grab": {
-            "distance": 400,
-            "line_linked": {
-              "opacity": 1
-            }
-          },
-          "bubble": {
-            "distance": 400,
-            "size": 40,
-            "duration": 2,
-            "opacity": 8,
-            "speed": 3
-          },
-          "repulse": {
-            "distance": 100
-          },
-          "push": {
-            "particles_nb": 4
-          },
-          "remove": {
-            "particles_nb": 2
-          }
+        "polygon": {
+          "nb_sides": 5
+        },
+        "image": {
+          "width": 100,
+          "height": 100
         }
       },
-      "retina_detect": true,
-      "config_demo": {
-        "hide_card": false,
-        "background_color": "#b61924",
-        "background_image": "",
-        "background_position": "50% 50%",
-        "background_repeat": "no-repeat",
-        "background_size": "cover"
+      "opacity": {
+        "value": 0.5,
+        "random": false,
+        "anim": {
+          "enable": false,
+          "speed": 1,
+          "opacity_min": 0.1,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 5,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 40,
+          "size_min": 0.1,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#ffffff",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 6,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
       }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "repulse"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "push"
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 400,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 400,
+          "size": 40,
+          "duration": 2,
+          "opacity": 8,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 100
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true,
+    "config_demo": {
+      "hide_card": false,
+      "background_color": "#b61924",
+      "background_image": "",
+      "background_position": "50% 50%",
+      "background_repeat": "no-repeat",
+      "background_size": "cover"
     }
-  );
+  }
+);
 
 });
 
-    </script>
-  </div>
+</script>
+</div>
 
-  </div>
+</div>
 </div>
 
 <!-- <footer> -->

@@ -136,6 +136,12 @@ button.contact_form_submit {
 #time{
   visibility: hidden;
 }
+#result{
+  visibility: hidden;
+}
+.result{
+  color: blue;
+}
 @media (max-width: 700px){
 .contact_field{
   padding: 10px;
