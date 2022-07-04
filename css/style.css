@@ -1568,6 +1568,13 @@ height: 67.9%;
 }
 
 /* SUPPORT */
+.form_alerts{
+  visibility: hidden;
+}
+.form_alert{
+  visibility: visible;
+}
+
 .form-popup{
   width: 400px;
   background: #fff;

@@ -143,52 +143,53 @@
     <div class="col-md-6">
       <form name="google-sheet" >
         <div class="form_alerts">
-        <script src="js/form.js"></script></div>
+          "<div class='alecess form-popup'><img src='images/tick.png'><h2>Thank You</h2><p>Your form has been submitted</p><p>Your Refference ID:</p><p class='result'></p><button><a href='support.html'>Close</a></button></div>"
+        </div>
         <div class="form_data">
           <div class="form-group mb-3">
-            <label for="name" class="form-label">Name</label>
+            <label for="name" class="form-label">Name*</label>
             <input type="text" id="name" name="NAME" class="form-control" placeholder="Enter your name" required>
           </div>
           <div class="form-group mb-3">
-            <label for="email" class="form-label">Email</label>
+            <label for="email" class="form-label">Email*</label>
             <input type="email" id="email" name="EMAIL" class="form-control" placeholder="Enter your email address" required>
           </div>
         </div>
         <div class="form_data">
           <div class="form-group mb-3">
-            <label for="phone" class="form-label">Mobile Number</label>
+            <label for="phone" class="form-label">Mobile Number*</label>
             <input type="text" id="phone" name="PHONE"   class="form-control" placeholder="Enter your mobile number" required>
           </div>
           <div class="form-group mb-3">
-            <label for="name" class="form-label">Company Name</label>
+            <label for="name" class="form-label">Company Name*</label>
             <input type="text" id="company" name="COMPANY_NAME"  class="form-control" placeholder="Enter your company name" required>
           </div>
         </div>
         <div class="form_data">
           <div class="form-group mb-3">
-            <label for="max_number" class="form-label">Serial Number</label>
+            <label for="max_number" class="form-label">Serial Number*</label>
             <input type="text" id="MAC" name="SERIAL_NUMBER"   class="form-control" placeholder="Enter your serial number" required>
           </div>
           <div class="form-group mb-3">
             <label for="max_number" class="form-label">MAC Number</label>
-            <input type="text" id="MAC" name="MAC_NUMBER"   class="form-control" placeholder="Enter your mac number" required>
+            <input type="text" id="MAC" name="MAC_NUMBER"   class="form-control" placeholder="Enter your mac number" >
           </div>
         </div>
         <div class="form-group mb-3">
-          <label for="name" class="form-label">City</label>
+          <label for="name" class="form-label">City*</label>
           <input type="text" id="city" name="CITY"  class="form-control" placeholder="Enter your city" required>
         </div>
 
         <div class="form-group mb-3">
-          <label for="name" class="form-label">Issue</label>
-          <select id="player_type" name="player_type" class="form-control">
+          <label for="name" class="form-label">Issue*</label>
+          <select id="player_type" name="player_type" class="form-control" required>
             <option value="issue" selected disabled>Where the issue is?</option>
-            <option value="team">Hardware</option>
-            <option value="experience">Software</option>
-            <option value="surname">Other</option>
+            <option value="Hardware">Hardware</option>
+            <option value="Software">Software</option>
+            <option value="Others">Other</option>
           </select>
           <div class="form-group" style="margin-top:25px;">
-            <div id="experiance">
+            <div id="Software">
               <label for="name" class="form-label">Issue type</label>
               <select id="exp" name="exp" class="form-control">
                 <option value="1">A</option>
@@ -197,7 +198,7 @@
                 <option value="4">D</option>
               </select>
             </div>
-            <div id="teams">
+            <div id="Hardware">
               <label for="name" class="form-label">Issue type</label>
               <select id="team" name="team" class="form-control">
                 <option value="1">1</option>
@@ -217,7 +218,7 @@
                 <option value="4">D</option>
               </select>
             </div>
-            <div id="surname">
+            <div id="Others">
               <label for="name" class="form-label">Issue type</label>
               <input type='text' class='form-control' id='surname' >
             </div>
@@ -252,25 +253,20 @@ $(document).ready(function () {
 });
 
 function toggleFields() {
-  if ($("#player_type").val() === "experience") {
-    $("#experiance").show();
+  if ($("#player_type").val() === "Others") {
+    $("#Others").show();
   } else {
-    $("#experiance").hide();
+    $("#Others").hide();
   }
-  if ($("#player_type").val() === "team") {
-    $("#teams").show();
+  if ($("#player_type").val() === "Hardware") {
+    $("#Hardware").show();
   } else {
-    $("#teams").hide();
+    $("#Hardware").hide();
   }
-  if ($("#player_type").val() === "age") {
-    $("#ages").show();
+  if ($("#player_type").val() === "Software") {
+    $("#Software").show();
   } else {
-    $("#ages").hide();
-  }
-  if ($("#player_type").val() === "surname") {
-    $("#surname").show();
-  } else {
-    $("#surname").hide();
+    $("#software").hide();
   }
 }
 
@@ -288,7 +284,7 @@ const form = document.forms['google-sheet']
 form.addEventListener('submit', e => {
   e.preventDefault()
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-  .then(response => $("#form_alerts").html("<div class='alecess form-popup'><img src='images/tick.png'><h2>Thank You</h2><p>Your form has been submitted</p><p>Your Refference ID:</p><p class='result'></p><button><a href='support.html'>Close</a></button></div>"))
+  .then(response => $(".form_alerts").addClass('form_alert'))
   .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>Contact message not sent.</div>"))
 })
 </script>
