@@ -288,7 +288,7 @@ const form = document.forms['google-sheet']
 form.addEventListener('submit', e => {
   e.preventDefault()
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-  .then(response => $(".form_alerts")
+  .then(response => $("#form_alerts").html("<div class='alecess form-popup'><img src='images/tick.png'><h2>Thank You</h2><p>Your form has been submitted</p><p>Your Refference ID:</p><p class='result'></p><button><a href='support.html'>Close</a></button></div>"))
   .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>Contact message not sent.</div>"))
 })
 </script>

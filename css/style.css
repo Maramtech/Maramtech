@@ -1614,3 +1614,30 @@ height: 67.9%;
 .form-popup button a{
   color: #fff;
 }
+.typing-demo {
+  width: 530px;
+  animation: typing 5s steps(40), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: 'Raleway';
+  font-weight: bolder;
+  font-size: 2em;
+}
+.typing{
+  width: fit-content;
+  margin: auto;
+  padding-top: 30px;
+
+}
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
