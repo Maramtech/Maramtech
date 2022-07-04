@@ -250,10 +250,15 @@
   <!-- </header> -->
 <!-- mobile header -->
 <div class="typing">
-
-  <div class="typing-demo">
-    We Are Hydrabad Based EMS Company..
-  </div>
+  <span class="ityped"></span>
+  <script src="https://unpkg.com/ityped@0.0.10"></script>
+      <script>
+            window.ityped.init(document.querySelector('.ityped'),{
+                strings: ['We Are Hydrabad Based EMS Company..'],
+                loop: true
+            })
+        </script>
+  
 </div>
 <!-- mobile header -->
 
