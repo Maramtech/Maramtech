@@ -143,7 +143,14 @@
     <div class="col-md-6">
       <form name="google-sheet" >
         <div class="form_alerts">
-          "<div class='alecess form-popup'><img src='images/tick.png'><h2>Thank You</h2><p>Your form has been submitted</p><p>Your Refference ID:</p><p class='result'></p><button><a href='support.html'>Close</a></button></div>"
+          "<div class='alecess form-popup'>
+            <img src='images/tick.png'>
+            <h2>Thank You</h2>
+            <p>Your complaint has been submitted</p>
+            <p>Your Refference ID:</p>
+            <p class='result'></p>
+            <button><a href='support.html'>Close</a></button>
+          </div>"
         </div>
         <div class="form_data">
           <div class="form-group mb-3">
@@ -182,16 +189,16 @@
 
         <div class="form-group mb-3">
           <label for="name" class="form-label">Issue*</label>
-          <select id="player_type" name="player_type" class="form-control" required>
-            <option value="issue" selected disabled>Where the issue is?</option>
+          <select id="player_type" name="ISSUE" class="form-control" required>
+            <option  selected disabled>Where the issue is?</option>
             <option value="Hardware">Hardware</option>
             <option value="Software">Software</option>
             <option value="Others">Other</option>
           </select>
           <div class="form-group" style="margin-top:25px;">
             <div id="Software">
-              <label for="name" class="form-label">Issue type</label>
-              <select id="exp" name="exp" class="form-control">
+              <label for="name" class="form-label">Issue type*</label>
+              <select id="exp" name="ISSUE_TYPE" class="form-control">
                 <option value="1">A</option>
                 <option value="2">B</option>
                 <option value="3">C</option>
@@ -199,8 +206,8 @@
               </select>
             </div>
             <div id="Hardware">
-              <label for="name" class="form-label">Issue type</label>
-              <select id="team" name="team" class="form-control">
+              <label for="name" class="form-label">Issue type*</label>
+              <select id="team" name="ISSUE_TYPE" class="form-control">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -209,28 +216,20 @@
                 <option value="6">6</option>
               </select>
             </div>
-            <div id="ages">
-              <label for="name" class="form-label">Issue type</label>
-              <select id="age" name="age" class="form-control">
-                <option value="1">A</option>
-                <option value="2">B</option>
-                <option value="3">C</option>
-                <option value="4">D</option>
-              </select>
-            </div>
+
             <div id="Others">
-              <label for="name" class="form-label">Issue type</label>
-              <input type='text' class='form-control' id='surname' >
+              <label for="name" class="form-label">Issue type*</label>
+              <input type='text' name="ISSUE_TYPE" class='form-control' id='surname' >
             </div>
           </div>
         </div>
         <div class="form-group mb-3">
-          <label for="message" class="form-label">Discription</label>
+          <label for="message" class="form-label">Discription*</label>
           <textarea id="message" name="ISSUE_DISCRIPTION" class="form-control" placeholder="Discribe your issue..." rows="5" required></textarea>
         </div>
         <input id="today" type="date" name="DATE">
         <input id="time" type='time' name="TIME" value='now'/>
-        <p  class='result'></p>
+        <textarea name="REFFERENCE_NUMBER" type="text"  class='result' style="display: none;"></textarea>
         <div>
           <button class="btn btn-primary me-2 " style="background: #01b0f0; border: 0;" type="submit" onclick="getFields()">Send message!</button>
           <!-- <button class="btn btn-danger" type="reset"  >Reset <th></th>e form!</button> -->
@@ -253,11 +252,7 @@ $(document).ready(function () {
 });
 
 function toggleFields() {
-  if ($("#player_type").val() === "Others") {
-    $("#Others").show();
-  } else {
-    $("#Others").hide();
-  }
+
   if ($("#player_type").val() === "Hardware") {
     $("#Hardware").show();
   } else {
@@ -266,7 +261,12 @@ function toggleFields() {
   if ($("#player_type").val() === "Software") {
     $("#Software").show();
   } else {
-    $("#software").hide();
+    $("#Software").hide();
+  }
+  if ($("#player_type").val() === "Others") {
+    $("#Others").show();
+  } else {
+    $("#Others").hide();
   }
 }
 
