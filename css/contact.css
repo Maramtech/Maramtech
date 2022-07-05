@@ -140,7 +140,7 @@ button.contact_form_submit {
   visibility: hidden;
 }
 .result{
-  color: blue;
+  font-size: xx-large;
 }
 @media (max-width: 700px){
 .contact_field{

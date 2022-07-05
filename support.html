@@ -227,7 +227,7 @@
           <label for="message" class="form-label">Discription*</label>
           <textarea id="message" name="ISSUE_DISCRIPTION" class="form-control" placeholder="Discribe your issue..." rows="5" required></textarea>
         </div>
-        <input type="file" name="file" onchange="LoadFile(event)" />
+        <input type="file" name="FILE" onchange="LoadFile(event)" />
       <input type="hidden" id="fileData" name="fileData" />
       <input type="hidden" id="mimeType" name="mimeType" />
       <input type="hidden" id="fileName" name="fileName" />
@@ -301,7 +301,7 @@ function toggleFields() {
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxh0Zn96HPqSJvraRloGsGJ5oU3FLtaZnsr_HLoMRKWm_a_0UN1rXw2EAyD7XIUjRHJ2A/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyC7pduppCT1vfhcR6dvCSZGOugD-qylNwtCUCO_3EJ47YovnRw5BfHdBRU4m6-8Gi5ZA/exec'
 const form = document.forms['google-sheet']
 
 form.addEventListener('submit', e => {
@@ -312,10 +312,11 @@ form.addEventListener('submit', e => {
 })
 </script>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzukHvX4uiB2dnwjyw9cDIUaEbVrqT4al9rJQA6T-JtbTSUfRRz_x27lX1cs_ye4wLqsw/exec'
+const form = document.forms['google-sheet']
 
-
-</script>
+</script> -->
 </script>
 <script type="text/javascript">
 var genString = function(len){
