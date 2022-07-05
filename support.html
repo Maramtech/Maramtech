@@ -27,7 +27,7 @@
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link
   rel="stylesheet"
   href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -227,9 +227,14 @@
           <label for="message" class="form-label">Discription*</label>
           <textarea id="message" name="ISSUE_DISCRIPTION" class="form-control" placeholder="Discribe your issue..." rows="5" required></textarea>
         </div>
+        <input type="file" name="file" onchange="LoadFile(event)" />
+      <input type="hidden" id="fileData" name="fileData" />
+      <input type="hidden" id="mimeType" name="mimeType" />
+      <input type="hidden" id="fileName" name="fileName" />
         <input id="today" type="date" name="DATE">
         <input id="time" type='time' name="TIME" value='now'/>
         <textarea name="REFFERENCE_NUMBER" type="text"  class='result' style="display: none;"></textarea>
+
         <div>
           <button class="btn btn-primary me-2 " style="background: #01b0f0; border: 0;" type="submit" onclick="getFields()">Send message!</button>
           <!-- <button class="btn btn-danger" type="reset"  >Reset <th></th>e form!</button> -->
@@ -242,7 +247,25 @@
   </select>
 </div> -->
 </form>
-
+<script>
+  function LoadFile(event)
+  {
+    var file = event.target.files[0];
+    var reader = new FileReader();
+    reader.onload = function(e) {
+      console.log(e.target.result);
+      var fileData = e.target.result.substr(e.target.result.indexOf(",")+1);
+      var mimeTypeStart = e.target.result.indexOf("data:") + 5;
+      var mimeTypeEnd = e.target.result.indexOf(";");
+      var mimeType = e.target.result.substr(mimeTypeStart, mimeTypeEnd - mimeTypeStart);
+      var fileName = file.name;
+      document.getElementById("fileData").value = fileData;
+      document.getElementById("mimeType").value = mimeType;
+      document.getElementById("fileName").value = fileName;
+    };
+    reader.readAsDataURL(file);
+  }
+  </script>
 <script type="text/javascript">
 $(document).ready(function () {
   toggleFields();
