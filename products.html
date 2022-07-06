@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
   if (history.scrollRestoration) {
     history.scrollRestoration = 'manual';
   } else {
@@ -19,7 +19,7 @@
         window.scrollTo(0, 0);
     }
   }
-  </script>
+  </script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="css/products.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -232,6 +232,11 @@
   </section><!-- #portfolio -->
 
   <section id="portfolio"  class="section-bg " >
+    <script type="text/javascript">
+    for ( let i = 0; i < 1000; i++ ) {
+      document.getElementById("portfolio-app").click();
+    }
+    </script>
 
     <div class="container ">
         <!-- <h1 class="title">PRODUCTS</h1> -->
@@ -239,14 +244,14 @@
         <div class="col-lg-12">
           <ul id="portfolio-flters">
             <li data-filter=".filter-one" class="filter-active">All</li>
-            <li data-filter="#filter-app">Android Tv Box</li>
-            <li data-filter="#filter-ott">OTT / ONU</li>
-            <li data-filter="#filter-4g">4G LTE Simcard</li>
-            <li data-filter="#filter-hybrid">Hybrid Box(cable + OTT)</li><br>
-            <li data-filter="#filter-card">Android Stick</li>
-            <li data-filter="#filter-ptv">Portable TV</li>
-            <li data-filter="#filter-web">TV</li>
-            <li data-filter="#filter-mouse">Air Mouse</li>
+            <li id="portfolio-app" data-filter="#filter-app">Android Tv Box</li>
+            <li id="portfolio-ott" data-filter="#filter-ott">OTT / ONU</li>
+            <li id="portfolio-4g" data-filter="#filter-4g">4G LTE Simcard</li>
+            <li id="portfolio-hybrid" data-filter="#filter-hybrid">Hybrid Box(cable + OTT)</li><br>
+            <li id="portfolio-card" data-filter="#filter-card">Android Stick</li>
+            <li id="portfolio-ptv" data-filter="#filter-ptv">Portable TV</li>
+            <li id="portfolio-web" data-filter="#filter-web">TV</li>
+            <li id="portfolio-mouse" data-filter="#filter-mouse">Air Mouse</li>
           </ul>
         </div>
       </div>
@@ -257,7 +262,13 @@
           <div class="portfolio-wrap">
             <figure>
               <img src="images/q100-1.jpg" class="img-fluid" alt="">
-              <a href="images/q100.png" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
+              <a href="#photo02"  data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
+              <div class= "lightbox-target" id="photo02">
+                  <div class= "container">
+                    <img src= "images/q100.png">
+                    <a class= "lightbox-close" href= "#!"><i class="fa fa-close" style="font-size:24px"></i></a>
+                  </div>
+               </div>
               <a href="q100.html" class="link-details" title="More Details"><i class="fa fa-ellipsis-v"></i></a>
             </figure>
 
@@ -272,7 +283,13 @@
           <div class="portfolio-wrap">
             <figure>
               <img src="images/stick-1.jpg" class="img-fluid" alt="">
-              <a href="images/stick.png" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="fa fa-eye"></i></a>
+              <a href="#photo03" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="fa fa-eye"></i></a>
+              <div class= "lightbox-target" id="photo03">
+                  <div class= "container">
+                    <img src= "images/stick.png">
+                    <a class= "lightbox-close" href= "#!"><i class="fa fa-close" style="font-size:24px"></i></a>
+                  </div>
+               </div>
               <a href="qd100.html" class="link-details" title="More Details"><i class="fa fa-ellipsis-v"></i></a>
             </figure>
 
@@ -287,7 +304,13 @@
           <div class="portfolio-wrap">
             <figure>
               <img src="images/q200-1.jpg" class="img-fluid" alt="">
-              <a href="images/q200.png" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="fa fa-eye"></i></a>
+              <a href="#photo04" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="fa fa-eye"></i></a>
+              <div class= "lightbox-target" id="photo04">
+                  <div class= "container">
+                    <img src= "images/q200.png">
+                    <a class= "lightbox-close" href= "#!"><i class="fa fa-close" style="font-size:24px"></i></a>
+                  </div>
+               </div>
               <a href="q200.html" class="link-details" title="More Details"><i class="fa fa-ellipsis-v"></i></a>
             </figure>
 
@@ -302,7 +325,13 @@
           <div class="portfolio-wrap">
             <figure>
               <img src="images/otv-1.jpg" class="img-fluid" alt="">
-              <a href="images/otv.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="fa fa-eye"></i></a>
+              <a href="#photo05" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="fa fa-eye"></i></a>
+              <div class= "lightbox-target" id="photo05">
+                  <div class= "container">
+                    <img src= "images/otv.jpg">
+                    <a class= "lightbox-close" href= "#!"><i class="fa fa-close" style="font-size:24px"></i></a>
+                  </div>
+               </div>
               <a href="#" class="link-details" title="More Details"><i class="fa fa-ellipsis-v"></i></a>
             </figure>
 
@@ -317,7 +346,13 @@
           <div class="portfolio-wrap">
             <figure>
               <img src="images/q900-1.jpg" class="img-fluid" alt="">
-              <a href="images/q900.png" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="fa fa-eye"></i></a>
+              <a class="link-preview" href="#photo01" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="fa fa-eye"></i></a>
+                <div class= "lightbox-target" id="photo01">
+		                <div class= "container">
+                      <img src= "images/q900.png">
+                      <a class= "lightbox-close" href= "#!"><i class="fa fa-close" style="font-size:24px"></i></a>
+		                </div>
+	               </div>
               <a href="q900.html" class="link-details" title="More Details"><i class="fa fa-ellipsis-v"></i></a>
             </figure>
 
@@ -332,7 +367,13 @@
           <div class="portfolio-wrap">
             <figure>
               <img src="images/atv-1.jpg" class="img-fluid" alt="">
-              <a href="images/atv-11.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="fa fa-eye"></i></a>
+              <a href="#photo06" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="fa fa-eye"></i></a>
+              <div class= "lightbox-target" id="photo06">
+                  <div class= "container">
+                    <img src= "images/atv-11.jpg">
+                    <a class= "lightbox-close" href= "#!"><i class="fa fa-close" style="font-size:24px"></i></a>
+                  </div>
+               </div>
               <a href="#" class="link-details" title="More Details"><i class="fa fa-ellipsis-v"></i></a>
             </figure>
 
@@ -347,7 +388,13 @@
           <div class="portfolio-wrap">
             <figure>
               <img src="images/q1000-1.jpg" class="img-fluid" alt="">
-              <a href="images/q1000.png" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="fa fa-eye"></i></a>
+              <a href="#photo07" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="fa fa-eye"></i></a>
+              <div class= "lightbox-target" id="photo07">
+                  <div class= "container">
+                    <img src= "images/q1000.png">
+                    <a class= "lightbox-close" href= "#!"><i class="fa fa-close" style="font-size:24px"></i></a>
+                  </div>
+               </div>
               <a href="q1000.html" class="link-details" title="More Details"><i class="fa fa-ellipsis-v"></i></a>
             </figure>
 
@@ -362,7 +409,13 @@
           <div class="portfolio-wrap">
             <figure>
               <img src="images/q5010t-1.jpg" class="img-fluid" alt="">
-              <a href="images/q5010t.png" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="fa fa-eye"></i></a>
+              <a href="#photo08" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="fa fa-eye"></i></a>
+              <div class= "lightbox-target" id="photo08">
+                  <div class= "container">
+                    <img src= "images/q5010t.png">
+                    <a class= "lightbox-close" href= "#!"><i class="fa fa-close" style="font-size:24px"></i></a>
+                  </div>
+               </div>
               <a href="q5010t.html" class="link-details" title="More Details"><i class="fa fa-ellipsis-v"></i></a>
             </figure>
 
@@ -376,7 +429,13 @@
           <div class="portfolio-wrap">
             <figure>
               <img src="images/qpa99-1.jpg" class="img-fluid" alt="">
-              <a href="images/qpa99.png" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="fa fa-eye"></i></a>
+              <a href="#photo09" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="fa fa-eye"></i></a>
+              <div class= "lightbox-target" id="photo09">
+                  <div class= "container">
+                    <img src= "images/qpa99.png">
+                    <a class= "lightbox-close" href= "#!"><i class="fa fa-close" style="font-size:24px"></i></a>
+                  </div>
+               </div>
               <a href="qpa99.html" class="link-details" title="More Details"><i class="fa fa-ellipsis-v"></i></a>
             </figure>
 
@@ -393,7 +452,13 @@
           <div class="portfolio-wrap">
             <figure>
               <img src="images/q50102t-1.jpg" class="img-fluid" alt="">
-              <a href="images/q50102t.png" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="fa fa-eye"></i></a>
+              <a href="#photo09" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="fa fa-eye"></i></a>
+              <div class= "lightbox-target" id="photo09">
+                  <div class= "container">
+                    <img src= "images/q50102t.png">
+                    <a class= "lightbox-close" href= "#!"><i class="fa fa-close" style="font-size:24px"></i></a>
+                  </div>
+               </div>
               <a href="q50102T.html" class="link-details" title="More Details"><i class="fa fa-ellipsis-v"></i></a>
             </figure>
 
@@ -408,7 +473,13 @@
           <div class="portfolio-wrap">
             <figure>
               <img src="images/mouse.jpg" class="img-fluid" alt="">
-              <a href="images/mouse.png" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="fa fa-eye"></i></a>
+              <a href="#photo10" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="fa fa-eye"></i></a>
+              <div class= "lightbox-target" id="photo10">
+                  <div class= "container">
+                    <img src= "images/mouse.png">
+                    <a class= "lightbox-close" href= "#!"><i class="fa fa-close" style="font-size:24px"></i></a>
+                  </div>
+               </div>
               <a href="mouse.html" class="link-details" title="More Details"><i class="fa fa-ellipsis-v"></i></a>
             </figure>
 
@@ -422,7 +493,13 @@
           <div class="portfolio-wrap">
             <figure>
               <img src="images/qhb01.jpg" class="img-fluid" alt="">
-              <a href="images/qhb01.png" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="fa fa-eye"></i></a>
+              <a href="#photo11" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="fa fa-eye"></i></a>
+              <div class= "lightbox-target" id="photo11">
+                  <div class= "container">
+                    <img src= "images/qbh01.png">
+                    <a class= "lightbox-close" href= "#!"><i class="fa fa-close" style="font-size:24px"></i></a>
+                  </div>
+               </div>
               <a href="hybrid.html" class="link-details" title="More Details"><i class="fa fa-ellipsis-v"></i></a>
             </figure>
 
@@ -437,7 +514,13 @@
           <div class="portfolio-wrap">
             <figure>
               <img src="images/qg100-1.jpg" class="img-fluid" alt="">
-              <a href="images/qg100.png" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="fa fa-eye"></i></a>
+              <a href="#photo12" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="fa fa-eye"></i></a>
+              <div class= "lightbox-target" id="photo12">
+                  <div class= "container">
+                    <img src= "images/qg100.png">
+                    <a class= "lightbox-close" href= "#!"><i class="fa fa-close" style="font-size:24px"></i></a>
+                  </div>
+               </div>
               <a href="qg100.html" class="link-details" title="More Details"><i class="fa fa-ellipsis-v"></i></a>
             </figure>
 
@@ -452,7 +535,13 @@
           <div class="portfolio-wrap">
             <figure>
               <img src="images/q2000-1.jpg" class="img-fluid" alt="">
-              <a href="images/q2000.png" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="fa fa-eye"></i></a>
+              <a href="#photo13" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="fa fa-eye"></i></a>
+              <div class= "lightbox-target" id="photo13">
+                  <div class= "container">
+                    <img src= "images/q2000.png">
+                    <a class= "lightbox-close" href= "#!"><i class="fa fa-close" style="font-size:24px"></i></a>
+                  </div>
+               </div>
               <a href="#" class="link-details" title="More Details"><i class="fa fa-ellipsis-v"></i></a>
             </figure>
 
