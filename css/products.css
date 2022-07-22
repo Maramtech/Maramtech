@@ -1,8 +1,9 @@
 /* Portfolio Section
 --------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 body {
   margin: 0;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -34,7 +35,7 @@ body {
   cursor: pointer;
   margin: 15px 15px 15px 0;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 10px;
   font-size: 12px;
   line-height: 20px;
   color: #666666;
@@ -100,7 +101,7 @@ body {
 
 #portfolio .portfolio-item figure .link-preview i,
 #portfolio .portfolio-item figure .link-details i {
-  padding-top: 6px;
+  padding-top: 8.5px;
   font-size: 22px;
   color: #333;
 }
@@ -167,7 +168,10 @@ body {
   font-size: 14px;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 500px){
 
+
+}
 /* Clients Section
 --------------------------------*/
 
@@ -204,10 +208,9 @@ body {
 #clients .owl-dot.active {
   background-color: #01b0f0;
 }
-
 @media (max-width: 500px){
   .section-bg1{
-    height: 550px;
+    height: 35em;
   }
     .mobile{
       display: block;
@@ -215,7 +218,18 @@ body {
     .desktop{
       display: none;
     }
+     #portfolio #portfolio-flters li {
+
+  padding: 5px 5px;
 }
+.lightbox-target:target img {
+    width: 300px;
+    height: 200px;
+    vertical-align: top;
+    opacity: 1;
+}
+}
+
 /* lightbox */
 
 .lightbox-target {
@@ -250,9 +264,7 @@ body {
   transform: translate3d(-50%, -50%, 0);
 }
 
-h3 {
-    text-align: center;
-}
+
 
 .container .elements {
     display:inline-block;

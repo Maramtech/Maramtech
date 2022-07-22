@@ -4,6 +4,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+ @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 :root {
   --blue: #007bff;
   --indigo: #0d0cb5;
@@ -41,7 +42,7 @@
   box-sizing: border-box; }
 
 html {
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -56,7 +57,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Lato', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -161,7 +162,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: 'Lato', sans-serif;
   font-size: 1em; }
 
 pre {
@@ -211,7 +212,7 @@ select,
 optgroup,
 textarea {
   margin: 0;
-  font-family: inherit;
+  font-family: 'Lato', sans-serif;
   font-size: inherit;
   line-height: inherit; }
 
@@ -304,7 +305,7 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: inherit;
+  font-family: 'Lato', sans-serif;
   font-weight: 500;
   line-height: 1.2;
   color: inherit; }
@@ -322,7 +323,7 @@ h4, .h4 {
   font-size: 1.5rem; }
 
 h5, .h5 {
-  font-size: 1.25rem; }
+  font-size: 1.15rem; }
 
 h6, .h6 {
   font-size: 1rem; }
@@ -4561,7 +4562,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -4646,7 +4647,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -7151,7 +7152,7 @@ button.bg-dark:focus {
     margin-left: auto !important; } }
 
 .text-monospace {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  font-family: 'Lato', sans-serif; }
 
 .text-justify {
   text-align: justify !important; }
@@ -7162,8 +7163,7 @@ button.bg-dark:focus {
 .text-truncate {
   overflow: hidden;
   -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  white-space: nowrap; }
+  text-overflow: ellipsis; }
 
 .text-left {
   text-align: left !important; }

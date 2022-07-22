@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 body{
   color: lightgray;
   position: relative;
+
 }
 .right_conatct_social_icon{
      background: linear-gradient(to right, #0072ff, #00c6ff);
@@ -146,6 +148,15 @@ button.contact_form_submit {
 .contact_field{
   padding: 10px;
 }
+.form_data{
+  display: block;
+}
+.form_data .form-group{
+  width: 100%
+}
+.form-group{
+  text-align: left;
+}
 .contact_inner{
   border-radius: 0;
 }
@@ -173,7 +184,7 @@ margin-top: 20px;
   z-index: 9999;
 }
 #login-box .logo .logo-caption {
-  font-family: 'Poiret One', cursive;
+  font-family: 'Lato', sans-serif;
   color: white;
   text-align: center;
   margin-bottom: 0px;
@@ -248,4 +259,7 @@ margin-top: 20px;
 }
 .btns:hover {
   background-color: gray;
+}
+.data_space{
+  width: 83.3333%
 }

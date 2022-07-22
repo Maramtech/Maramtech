@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Products</title>
+  <meta name="description" content="Maram Technologies manufactures android tv box which has features like 4G lte simcard, OTT + ONU, hybrid tv box (cable + OTT), .....">
+  <meta name="keywords" content="EMS Company Hydrabad, AndroidTvBox, best android tv box, android tv box, queva android tv box, best android tv box in india">
   <link rel="icon" type="image/jpg" sizes="16x16" href="images/logo1.svg ">
   <link rel="stylesheet" href="css/style.css">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -24,6 +26,7 @@
   <link rel="stylesheet" href="css/products.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/products.css">
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -62,10 +65,13 @@
   	filterList.init();
   });
   </script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 </head>
 <body>
-
+  <a href="https://api.whatsapp.com/send?phone=918125703703&text=FOR%20OTT%20AND%20ONU%20BOX%20PLEASE%20CONTACT%20US" class="float" target="_blank">
+  <i class="fa fa-whatsapp my-float"></i>
+  </a>
 
   <!-- <header> -->
   <header>
@@ -76,7 +82,7 @@
           <a href="mailto:info@maramtechnologies.in"><i class="fa fa-envelope">&nbsp;</i>info@maramtechnologies.in</a>
         </article>
         <!-- <article class="top_bar_02">
-        <a href="https://api.whatsapp.com/send?phone=918125703702&text=FOR%20OTT%20AND%20ONU%20BOX%20PLEASE%20CONTACT%20US" ><i class="fab fa-2x fa-whatsapp"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=918125703703&text=FOR%20OTT%20AND%20ONU%20BOX%20PLEASE%20CONTACT%20US" ><i class="fab fa-2x fa-whatsapp"></i></a>
         <a href="https://www.linkedin.com/company/maram-technologies-hyderabad"  target="_blank"><i class="fab fa-2x fa-linkedin"></i></a>
         <a href="https://www.facebook.com/Maram-Technologies-100640411782598" target="_blank"><i class="fab fa-2x fa-facebook"></i></a>
       </article> -->
@@ -202,7 +208,7 @@
               <img src="images/cable.jpg" alt="">
             </div>
             <div class="banner mobile">
-              <img src="images/tv1.jpg" alt="">
+              <img src="images/cable1.jpg" alt="">
             </div>
         </div>
           <div class=" portfolio-item filter-web  " id="filter-ptv">
@@ -211,6 +217,14 @@
             </div>
             <div class="banner mobile">
               <img src="images/ptv1-1.jpg" alt="">
+            </div>
+        </div>
+          <div class=" portfolio-item filter-web  " id="filter-pc">
+            <div class="banner desktop">
+              <img src="images/mpc1.jpg" alt="">
+            </div>
+            <div class="banner mobile">
+              <img src="images/mpc1-1.jpg" alt="">
             </div>
         </div>
           <div class=" portfolio-item filter-web  " id="filter-mouse">
@@ -224,34 +238,33 @@
         </div>
 
         </div>
-
-
-
-
-
   </section><!-- #portfolio -->
-
+  <script type="text/javascript">
+  function ChangeUrl(title, url) {
+      if (typeof (history.pushState) != "undefined") {
+          var obj = { Title: title, Url: url };
+          history.pushState(obj, obj.Title, obj.Url);
+      } else {
+          alert("Browser does not support HTML5.");
+      }
+  }
+  </script>
   <section id="portfolio"  class="section-bg " >
-    <script type="text/javascript">
-    for ( let i = 0; i < 1000; i++ ) {
-      document.getElementById("portfolio-app").click();
-    }
-    </script>
-
     <div class="container ">
         <!-- <h1 class="title">PRODUCTS</h1> -->
       <div class="row">
         <div class="col-lg-12">
           <ul id="portfolio-flters">
             <li data-filter=".filter-one" class="filter-active">All</li>
-            <li id="portfolio-app" data-filter="#filter-app">Android Tv Box</li>
-            <li id="portfolio-ott" data-filter="#filter-ott">OTT / ONU</li>
-            <li id="portfolio-4g" data-filter="#filter-4g">4G LTE Simcard</li>
-            <li id="portfolio-hybrid" data-filter="#filter-hybrid">Hybrid Box(cable + OTT)</li><br>
-            <li id="portfolio-card" data-filter="#filter-card">Android Stick</li>
-            <li id="portfolio-ptv" data-filter="#filter-ptv">Portable TV</li>
-            <li id="portfolio-web" data-filter="#filter-web">TV</li>
-            <li id="portfolio-mouse" data-filter="#filter-mouse">Air Mouse</li>
+            <li id="portfolio-app" onclick="ChangeUrl('products.html', 'products_atv.html');" data-filter="#filter-app">Android Tv Box</li>
+            <li id="portfolio-ott" onclick="ChangeUrl('products.html', 'products_ott.html');" data-filter="#filter-ott">OTT / ONU</li>
+            <li id="portfolio-4g" onclick="ChangeUrl('products.html', 'products_4g.html');" data-filter="#filter-4g">4G LTE Simcard</li>
+            <li id="portfolio-hybrid" onclick="ChangeUrl('products.html', 'products_hybrid.html');" data-filter="#filter-hybrid">Hybrid Box(cable + OTT)</li><br>
+            <li id="portfolio-pc" onclick="ChangeUrl('products.html', 'products_pc.html');" data-filter="#filter-pc">Windows Mini PC</li>
+            <li id="portfolio-card" onclick="ChangeUrl('products.html', 'products_stick.html');" data-filter="#filter-card">Android Stick</li>
+            <li id="portfolio-ptv" onclick="ChangeUrl('products.html', 'products_ptv.html');" data-filter="#filter-ptv">Portable TV</li>
+            <li id="portfolio-web" onclick="ChangeUrl('products.html', 'products_tv.html');" data-filter="#filter-web">TV</li>
+            <li id="portfolio-mouse" onclick="ChangeUrl('products.html', 'products_mouse.html');" data-filter="#filter-mouse">Air Mouse</li>
           </ul>
         </div>
       </div>
@@ -378,8 +391,28 @@
             </figure>
 
             <div class="portfolio-info">
-              <h4><a href="#">ORDINARY TV</a></h4>
+              <h4><a href="#">LED TV</a></h4>
               <p>TV</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web wow filter-one" data-wow-delay="0.2s" id="filter-pc">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="images/qwm100-1.jpg" class="img-fluid" alt="">
+              <a href="#photo14" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="fa fa-eye"></i></a>
+              <div class= "lightbox-target" id="photo14">
+                  <div class= "container">
+                    <img src= "images/qwm100.png">
+                    <a class= "lightbox-close" href= "#!"><i class="fa fa-close" style="font-size:24px"></i></a>
+                  </div>
+               </div>
+              <a href="qwm100.html" class="link-details" title="More Details"><i class="fa fa-ellipsis-v"></i></a>
+            </figure>
+
+            <div class="portfolio-info">
+              <h4><a href="qwm100.html">QWM100</a></h4>
+              <p>Windows Mini PC</p>
             </div>
           </div>
         </div>
@@ -400,7 +433,7 @@
 
             <div class="portfolio-info">
               <h4><a href="q1000.html">Q1000</a></h4>
-              <p>Android Tv Box</p>
+              <p>4G LTE Simcard</p>
             </div>
           </div>
         </div>
@@ -421,7 +454,7 @@
 
             <div class="portfolio-info">
               <h4><a href="q5010t.html">Q5010T</a></h4>
-              <p>Android Tv Box</p>
+              <p>OTT + ONU</p>
             </div>
           </div>
         </div>
@@ -464,7 +497,7 @@
 
             <div class="portfolio-info">
               <h4><a href="q50102T.html">Q50102T</a></h4>
-              <p>Android Tv Box</p>
+              <p>OTT + ONU</p>
             </div>
           </div>
         </div>
@@ -542,12 +575,12 @@
                     <a class= "lightbox-close" href= "#!"><i class="fa fa-close" style="font-size:24px"></i></a>
                   </div>
                </div>
-              <a href="#" class="link-details" title="More Details"><i class="fa fa-ellipsis-v"></i></a>
+              <a href="q2000.html" class="link-details" title="More Details"><i class="fa fa-ellipsis-v"></i></a>
             </figure>
 
             <div class="portfolio-info">
-              <h4><a href="#">Q2000</a></h4>
-              <p>Android Tv Box</p>
+              <h4><a href="q2000.html">Q2000</a></h4>
+              <p>4G LTE Simcard</p>
             </div>
           </div>
         </div>
@@ -558,7 +591,7 @@
   </section><!-- #portfolio -->
 
   <!-- products -->
-  <div class="container">
+  <!-- <div class="container">
     <h1 class="project_title">Projects</h1>
     <div class="accordian">
       <ul>
@@ -621,7 +654,7 @@
       </ul>
     </div>
 
-  </div>
+  </div> -->
 <!-- products -->
 
 
@@ -646,7 +679,7 @@
         <div class="col-md-3 mobile">
           <h3>Follow us</h3>
           <ul class="list-unstyled social">
-            <li><a href="https://api.whatsapp.com/send?phone=918125703702&text=FOR%20OTT%20AND%20ONU%20BOX%20PLEASE%20CONTACT%20US" > <img src="images/whatsapp.svg" alt=""> </a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=918125703703&text=FOR%20OTT%20AND%20ONU%20BOX%20PLEASE%20CONTACT%20US" > <img src="images/whatsapp.svg" alt=""> </a></li>
             <li><a href="https://www.linkedin.com/company/maram-technologies-hyderabad"  target="_blank"> <img src="images/linkedin.svg" alt=""></a></li>
             <li><a href="https://www.facebook.com/Maram-Technologies-100640411782598" target="_blank"><img src="images/fb.svg" alt=""></a></li>
           </ul>
@@ -684,7 +717,7 @@
         <div class="col-md-3 desktop">
           <h3>Follow us</h3>
           <ul class="list-unstyled social desktop">
-            <li><a href="https://api.whatsapp.com/send?phone=918125703702&text=FOR%20OTT%20AND%20ONU%20BOX%20PLEASE%20CONTACT%20US" > <img src="images/whatsapp.svg" alt=""> </a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=918125703703&text=FOR%20OTT%20AND%20ONU%20BOX%20PLEASE%20CONTACT%20US" > <img src="images/whatsapp.svg" alt=""> </a></li>
             <li><a href="https://www.linkedin.com/company/maram-technologies-hyderabad"  target="_blank"> <img src="images/linkedin.svg" alt=""></a></li>
             <li><a href="https://www.facebook.com/Maram-Technologies-100640411782598" target="_blank"><img src="images/fb.svg" alt=""></a></li>
           </ul>
