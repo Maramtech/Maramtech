@@ -6,13 +6,13 @@
     $email = $_POST['email'];
     $usermessage = $_POST['message'];
 
-    $message ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Message =" . $usermessage;
+    $message = 'Thankyou For Chooseing us';
 
-    $subject ="Product Details Download";
-    $fromname = $name ;
-    $fromemail = $email;  //if u dont have an email create one on your cpanel
+    $subject ="Product Details";
+    $fromname ="Maram Technologies";
+    $fromemail = 'noreply@maramtechnologies.in';  //if u dont have an email create one on your cpanel
 
-    $mailto = 'nizamuddinalthaf@gmail.com';  //the email which u want to recv this email
+    $mailto = $email;  //the email which u want to recv this email
 
 
 
@@ -47,12 +47,4 @@
     $body .= $content . $eol;
     $body .= "--" . $separator . "--";
 
-    //SEND Mail
-    if (mail($mailto, $subject, $body, $headers)) {
-        echo "mail send ... OK"; // do what you want after sending the email
-
-
-    } else {
-        echo "mail send ... ERROR!";
-        print_r( error_get_last() );
-    }
+    
