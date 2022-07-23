@@ -8,9 +8,9 @@
 
     $message ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Message =" . $usermessage;
 
-    $subject ="My email subject";
-    $fromname ="My Website Name";
-    $fromemail = 'noreply@codeconia.com';  //if u dont have an email create one on your cpanel
+    $subject ="Product Details Download";
+    $fromname = $name ;
+    $fromemail = $email;  //if u dont have an email create one on your cpanel
 
     $mailto = 'nizamuddinalthaf@gmail.com';  //the email which u want to recv this email
 
